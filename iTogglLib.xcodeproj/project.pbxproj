@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		261542931918C656006B33E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542921918C656006B33E2 /* Foundation.framework */; };
+		261542981918C656006B33E2 /* iTogglLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542971918C656006B33E2 /* iTogglLib.h */; };
+		2615429A1918C656006B33E2 /* iTogglLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 261542991918C656006B33E2 /* iTogglLib.m */; };
+		261542A11918C657006B33E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542A01918C657006B33E2 /* XCTest.framework */; };
+		261542A21918C657006B33E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542921918C656006B33E2 /* Foundation.framework */; };
+		261542A41918C657006B33E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542A31918C657006B33E2 /* UIKit.framework */; };
+		261542A71918C657006B33E2 /* libiTogglLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2615428F1918C656006B33E2 /* libiTogglLib.a */; };
+		261542AD1918C657006B33E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 261542AB1918C657006B33E2 /* InfoPlist.strings */; };
+		261542AF1918C657006B33E2 /* TGLTimeEntryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 261542AE1918C657006B33E2 /* TGLTimeEntryTests.m */; };
+		261542C51918C6D5006B33E2 /* TGLTogglClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 261542C21918C6D5006B33E2 /* TGLTogglClient.m */; };
+		261542C61918C6D5006B33E2 /* TGLTimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 261542C41918C6D5006B33E2 /* TGLTimeEntry.m */; };
+		261542CA1918C84C006B33E2 /* TGLTogglClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542C11918C6D5006B33E2 /* TGLTogglClient.h */; };
+		261542CB1918C84C006B33E2 /* TGLTimeEntry.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542C31918C6D5006B33E2 /* TGLTimeEntry.h */; };
+		262E5EF3195B6D7300030A45 /* TGLTimeEntry+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */; };
+		26A6870E19202A35000FD7E5 /* TGLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6870D19202A35000FD7E5 /* TGLUser.m */; };
+		26AC554D19A792ED000899C5 /* TGLTimeEntry+NSCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		261542A51918C657006B33E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 261542871918C656006B33E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2615428E1918C656006B33E2;
+			remoteInfo = iTogglLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2615428D1918C656006B33E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				261542CA1918C84C006B33E2 /* TGLTogglClient.h in CopyFiles */,
+				261542CB1918C84C006B33E2 /* TGLTimeEntry.h in CopyFiles */,
+				261542981918C656006B33E2 /* iTogglLib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2615428F1918C656006B33E2 /* libiTogglLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiTogglLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		261542921918C656006B33E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		261542961918C656006B33E2 /* iTogglLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTogglLib-Prefix.pch"; sourceTree = "<group>"; };
+		261542971918C656006B33E2 /* iTogglLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTogglLib.h; sourceTree = "<group>"; };
+		261542991918C656006B33E2 /* iTogglLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iTogglLib.m; sourceTree = "<group>"; };
+		2615429F1918C657006B33E2 /* iTogglLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTogglLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		261542A01918C657006B33E2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		261542A31918C657006B33E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		261542AA1918C657006B33E2 /* iTogglLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTogglLibTests-Info.plist"; sourceTree = "<group>"; };
+		261542AC1918C657006B33E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		261542AE1918C657006B33E2 /* TGLTimeEntryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLTimeEntryTests.m; sourceTree = "<group>"; };
+		261542C11918C6D5006B33E2 /* TGLTogglClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLTogglClient.h; sourceTree = "<group>"; };
+		261542C21918C6D5006B33E2 /* TGLTogglClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTogglClient.m; sourceTree = "<group>"; };
+		261542C31918C6D5006B33E2 /* TGLTimeEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLTimeEntry.h; sourceTree = "<group>"; };
+		261542C41918C6D5006B33E2 /* TGLTimeEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTimeEntry.m; sourceTree = "<group>"; };
+		262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLTimeEntry+Json.h"; sourceTree = "<group>"; };
+		262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLTimeEntry+Json.m"; sourceTree = "<group>"; };
+		26A6870C19202A35000FD7E5 /* TGLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLUser.h; sourceTree = "<group>"; };
+		26A6870D19202A35000FD7E5 /* TGLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUser.m; sourceTree = "<group>"; };
+		26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLTimeEntry+NSCoder.h"; sourceTree = "<group>"; };
+		26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLTimeEntry+NSCoder.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2615428C1918C656006B33E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261542931918C656006B33E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2615429C1918C657006B33E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261542A11918C657006B33E2 /* XCTest.framework in Frameworks */,
+				261542A71918C657006B33E2 /* libiTogglLib.a in Frameworks */,
+				261542A41918C657006B33E2 /* UIKit.framework in Frameworks */,
+				261542A21918C657006B33E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		261542861918C656006B33E2 = {
+			isa = PBXGroup;
+			children = (
+				261542941918C656006B33E2 /* iTogglLib */,
+				261542A81918C657006B33E2 /* iTogglLibTests */,
+				261542911918C656006B33E2 /* Frameworks */,
+				261542901918C656006B33E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		261542901918C656006B33E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2615428F1918C656006B33E2 /* libiTogglLib.a */,
+				2615429F1918C657006B33E2 /* iTogglLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		261542911918C656006B33E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				261542921918C656006B33E2 /* Foundation.framework */,
+				261542A01918C657006B33E2 /* XCTest.framework */,
+				261542A31918C657006B33E2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		261542941918C656006B33E2 /* iTogglLib */ = {
+			isa = PBXGroup;
+			children = (
+				261542C11918C6D5006B33E2 /* TGLTogglClient.h */,
+				261542C21918C6D5006B33E2 /* TGLTogglClient.m */,
+				261542C31918C6D5006B33E2 /* TGLTimeEntry.h */,
+				261542C41918C6D5006B33E2 /* TGLTimeEntry.m */,
+				262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */,
+				262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */,
+				26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */,
+				26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */,
+				26A6870C19202A35000FD7E5 /* TGLUser.h */,
+				26A6870D19202A35000FD7E5 /* TGLUser.m */,
+				261542971918C656006B33E2 /* iTogglLib.h */,
+				261542991918C656006B33E2 /* iTogglLib.m */,
+				261542951918C656006B33E2 /* Supporting Files */,
+			);
+			path = iTogglLib;
+			sourceTree = "<group>";
+		};
+		261542951918C656006B33E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				261542961918C656006B33E2 /* iTogglLib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		261542A81918C657006B33E2 /* iTogglLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				261542AE1918C657006B33E2 /* TGLTimeEntryTests.m */,
+				261542A91918C657006B33E2 /* Supporting Files */,
+			);
+			path = iTogglLibTests;
+			sourceTree = "<group>";
+		};
+		261542A91918C657006B33E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				261542AA1918C657006B33E2 /* iTogglLibTests-Info.plist */,
+				261542AB1918C657006B33E2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2615428E1918C656006B33E2 /* iTogglLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261542B21918C657006B33E2 /* Build configuration list for PBXNativeTarget "iTogglLib" */;
+			buildPhases = (
+				2615428B1918C656006B33E2 /* Sources */,
+				2615428C1918C656006B33E2 /* Frameworks */,
+				2615428D1918C656006B33E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTogglLib;
+			productName = iTogglLib;
+			productReference = 2615428F1918C656006B33E2 /* libiTogglLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2615429E1918C657006B33E2 /* iTogglLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 261542B51918C657006B33E2 /* Build configuration list for PBXNativeTarget "iTogglLibTests" */;
+			buildPhases = (
+				2615429B1918C657006B33E2 /* Sources */,
+				2615429C1918C657006B33E2 /* Frameworks */,
+				2615429D1918C657006B33E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				261542A61918C657006B33E2 /* PBXTargetDependency */,
+			);
+			name = iTogglLibTests;
+			productName = iTogglLibTests;
+			productReference = 2615429F1918C657006B33E2 /* iTogglLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		261542871918C656006B33E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TGL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Christoph Krautz";
+			};
+			buildConfigurationList = 2615428A1918C656006B33E2 /* Build configuration list for PBXProject "iTogglLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 261542861918C656006B33E2;
+			productRefGroup = 261542901918C656006B33E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2615428E1918C656006B33E2 /* iTogglLib */,
+				2615429E1918C657006B33E2 /* iTogglLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2615429D1918C657006B33E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261542AD1918C657006B33E2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2615428B1918C656006B33E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261542C61918C6D5006B33E2 /* TGLTimeEntry.m in Sources */,
+				261542C51918C6D5006B33E2 /* TGLTogglClient.m in Sources */,
+				26A6870E19202A35000FD7E5 /* TGLUser.m in Sources */,
+				2615429A1918C656006B33E2 /* iTogglLib.m in Sources */,
+				26AC554D19A792ED000899C5 /* TGLTimeEntry+NSCoder.m in Sources */,
+				262E5EF3195B6D7300030A45 /* TGLTimeEntry+Json.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2615429B1918C657006B33E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				261542AF1918C657006B33E2 /* TGLTimeEntryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		261542A61918C657006B33E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2615428E1918C656006B33E2 /* iTogglLib */;
+			targetProxy = 261542A51918C657006B33E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		261542AB1918C657006B33E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261542AC1918C657006B33E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		261542B01918C657006B33E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		261542B11918C657006B33E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		261542B31918C657006B33E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/iTogglLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		261542B41918C657006B33E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/iTogglLib.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		261542B61918C657006B33E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iTogglLibTests/iTogglLibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		261542B71918C657006B33E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
+				INFOPLIST_FILE = "iTogglLibTests/iTogglLibTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2615428A1918C656006B33E2 /* Build configuration list for PBXProject "iTogglLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261542B01918C657006B33E2 /* Debug */,
+				261542B11918C657006B33E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261542B21918C657006B33E2 /* Build configuration list for PBXNativeTarget "iTogglLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261542B31918C657006B33E2 /* Debug */,
+				261542B41918C657006B33E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		261542B51918C657006B33E2 /* Build configuration list for PBXNativeTarget "iTogglLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				261542B61918C657006B33E2 /* Debug */,
+				261542B71918C657006B33E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 261542871918C656006B33E2 /* Project object */;
+}
