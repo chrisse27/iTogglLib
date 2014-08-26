@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Christoph Krautz. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface iTogglLib : NSObject
-
-@end
+#import "TGLTogglClient.h"
+#import "TGLTimeEntry.h"
+#import "TGLTimeEntry+Json.h"
+#import "TGLTimeEntry+NSCoder.h"
+#import "TGLUser.h"
