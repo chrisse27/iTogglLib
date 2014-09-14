@@ -10,6 +10,11 @@
 
 #import "TGLTimeEntry.h"
 #import "TGLUser.h"
+#import "TGLUserService.h"
+#import "TGLTimeEntryService.h"
+
+@class TGLUserService;
+@class TGLTimeEntryService;
 
 FOUNDATION_EXPORT NSString * const TogglApiBaseUrl;
 FOUNDATION_EXPORT NSString * const TogglApiToken;
@@ -19,14 +24,16 @@ FOUNDATION_EXPORT NSString * const TogglApiToken;
 @property (readonly, strong) NSString *username;
 @property (readonly, strong) NSString *password;
 
+@property (readonly, strong) TGLUserService *user;
+@property (readonly, strong) TGLTimeEntryService *timeEntry;
+
 + (NSDateFormatter *)formatter;
 
 - (id)initWithUserName:(NSString*)username AndPassword:(NSString *)password;
 
-- (TGLUser *)currentUser;
-- (TGLTimeEntry *)currentTimeEntry;
-- (NSArray *)timeEntriesBetween:(NSDate *)start And:(NSDate *)end;
-- (TGLTimeEntry *)createAndStartTimeEntry:(TGLTimeEntry *)entry;
-- (TGLTimeEntry *)stopTimeEntry:(TGLTimeEntry *)entry;
+- (NSDictionary *)itemByGetWithRelativeURL:(NSString *)urlString;
+- (NSArray *)listByGetWithRelativeURL:(NSString *)urlString;
+- (NSMutableURLRequest*)createRequestForRelativeURL:(NSString *)urlString withMethod:(NSString *)method;
+- (id)sendRequest:(NSURLRequest *)request;
 
 @end

@@ -10,6 +10,8 @@
 		260EC08319ACAC29001D3A87 /* TGLUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26A6870C19202A35000FD7E5 /* TGLUser.h */; };
 		260EC08419ACAC31001D3A87 /* TGLTimeEntry+Json.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */; };
 		260EC08519ACAC31001D3A87 /* TGLTimeEntry+NSCoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */; };
+		260EC08719AD80D2001D3A87 /* TGLUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 260EC08619AD80D1001D3A87 /* TGLUserTests.m */; };
+		260EC08919ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 260EC08819ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m */; };
 		261542931918C656006B33E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542921918C656006B33E2 /* Foundation.framework */; };
 		261542981918C656006B33E2 /* iTogglLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542971918C656006B33E2 /* iTogglLib.h */; };
 		261542A11918C657006B33E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542A01918C657006B33E2 /* XCTest.framework */; };
@@ -23,6 +25,12 @@
 		261542CA1918C84C006B33E2 /* TGLTogglClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542C11918C6D5006B33E2 /* TGLTogglClient.h */; };
 		261542CB1918C84C006B33E2 /* TGLTimeEntry.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542C31918C6D5006B33E2 /* TGLTimeEntry.h */; };
 		262E5EF3195B6D7300030A45 /* TGLTimeEntry+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */; };
+		2641E82619C59301007BBB21 /* TGLTimeEntryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E82519C59301007BBB21 /* TGLTimeEntryService.m */; };
+		2641E82819C59BC2007BBB21 /* TGLTimeEntryService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E82419C59301007BBB21 /* TGLTimeEntryService.h */; };
+		2641E82B19C5AA5D007BBB21 /* TGLProjectService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E82A19C5AA5D007BBB21 /* TGLProjectService.m */; };
+		2641E82C19C5AA6C007BBB21 /* TGLProjectService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E82919C5AA5D007BBB21 /* TGLProjectService.h */; };
+		2641E83119C622FE007BBB21 /* TGLUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83019C622FE007BBB21 /* TGLUserService.m */; };
+		2641E83219C628B3007BBB21 /* TGLUserService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E82F19C622FE007BBB21 /* TGLUserService.h */; };
 		26A6870E19202A35000FD7E5 /* TGLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6870D19202A35000FD7E5 /* TGLUser.m */; };
 		26AC554D19A792ED000899C5 /* TGLTimeEntry+NSCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */; };
 /* End PBXBuildFile section */
@@ -44,6 +52,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				2641E83219C628B3007BBB21 /* TGLUserService.h in CopyFiles */,
+				2641E82C19C5AA6C007BBB21 /* TGLProjectService.h in CopyFiles */,
+				2641E82819C59BC2007BBB21 /* TGLTimeEntryService.h in CopyFiles */,
 				260EC08419ACAC31001D3A87 /* TGLTimeEntry+Json.h in CopyFiles */,
 				260EC08519ACAC31001D3A87 /* TGLTimeEntry+NSCoder.h in CopyFiles */,
 				260EC08319ACAC29001D3A87 /* TGLUser.h in CopyFiles */,
@@ -56,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		260EC08619AD80D1001D3A87 /* TGLUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUserTests.m; sourceTree = "<group>"; };
+		260EC08819ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLTimeEntry+JsonTests.m"; sourceTree = "<group>"; };
 		2615428F1918C656006B33E2 /* libiTogglLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiTogglLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		261542921918C656006B33E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		261542961918C656006B33E2 /* iTogglLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTogglLib-Prefix.pch"; sourceTree = "<group>"; };
@@ -72,6 +85,12 @@
 		261542C41918C6D5006B33E2 /* TGLTimeEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTimeEntry.m; sourceTree = "<group>"; };
 		262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLTimeEntry+Json.h"; sourceTree = "<group>"; };
 		262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLTimeEntry+Json.m"; sourceTree = "<group>"; };
+		2641E82419C59301007BBB21 /* TGLTimeEntryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLTimeEntryService.h; sourceTree = "<group>"; };
+		2641E82519C59301007BBB21 /* TGLTimeEntryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTimeEntryService.m; sourceTree = "<group>"; };
+		2641E82919C5AA5D007BBB21 /* TGLProjectService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLProjectService.h; sourceTree = "<group>"; };
+		2641E82A19C5AA5D007BBB21 /* TGLProjectService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLProjectService.m; sourceTree = "<group>"; };
+		2641E82F19C622FE007BBB21 /* TGLUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLUserService.h; sourceTree = "<group>"; };
+		2641E83019C622FE007BBB21 /* TGLUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUserService.m; sourceTree = "<group>"; };
 		26A6870C19202A35000FD7E5 /* TGLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLUser.h; sourceTree = "<group>"; };
 		26A6870D19202A35000FD7E5 /* TGLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUser.m; sourceTree = "<group>"; };
 		26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLTimeEntry+NSCoder.h"; sourceTree = "<group>"; };
@@ -133,17 +152,7 @@
 		261542941918C656006B33E2 /* iTogglLib */ = {
 			isa = PBXGroup;
 			children = (
-				261542C11918C6D5006B33E2 /* TGLTogglClient.h */,
-				261542C21918C6D5006B33E2 /* TGLTogglClient.m */,
-				261542C31918C6D5006B33E2 /* TGLTimeEntry.h */,
-				261542C41918C6D5006B33E2 /* TGLTimeEntry.m */,
-				262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */,
-				262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */,
-				26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */,
-				26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */,
-				26A6870C19202A35000FD7E5 /* TGLUser.h */,
-				26A6870D19202A35000FD7E5 /* TGLUser.m */,
-				261542971918C656006B33E2 /* iTogglLib.h */,
+				2641E82D19C621C5007BBB21 /* Classes */,
 				261542951918C656006B33E2 /* Supporting Files */,
 			);
 			path = iTogglLib;
@@ -161,6 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				261542AE1918C657006B33E2 /* TGLTimeEntryTests.m */,
+				260EC08819ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m */,
+				260EC08619AD80D1001D3A87 /* TGLUserTests.m */,
 				261542A91918C657006B33E2 /* Supporting Files */,
 			);
 			path = iTogglLibTests;
@@ -173,6 +184,38 @@
 				261542AB1918C657006B33E2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2641E82D19C621C5007BBB21 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2641E82E19C622DE007BBB21 /* Services */,
+				261542C11918C6D5006B33E2 /* TGLTogglClient.h */,
+				261542C21918C6D5006B33E2 /* TGLTogglClient.m */,
+				261542C31918C6D5006B33E2 /* TGLTimeEntry.h */,
+				261542C41918C6D5006B33E2 /* TGLTimeEntry.m */,
+				262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */,
+				262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */,
+				26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */,
+				26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */,
+				26A6870C19202A35000FD7E5 /* TGLUser.h */,
+				26A6870D19202A35000FD7E5 /* TGLUser.m */,
+				261542971918C656006B33E2 /* iTogglLib.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2641E82E19C622DE007BBB21 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2641E82419C59301007BBB21 /* TGLTimeEntryService.h */,
+				2641E82519C59301007BBB21 /* TGLTimeEntryService.m */,
+				2641E82919C5AA5D007BBB21 /* TGLProjectService.h */,
+				2641E82A19C5AA5D007BBB21 /* TGLProjectService.m */,
+				2641E82F19C622FE007BBB21 /* TGLUserService.h */,
+				2641E83019C622FE007BBB21 /* TGLUserService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +302,10 @@
 			files = (
 				261542C61918C6D5006B33E2 /* TGLTimeEntry.m in Sources */,
 				261542C51918C6D5006B33E2 /* TGLTogglClient.m in Sources */,
+				2641E83119C622FE007BBB21 /* TGLUserService.m in Sources */,
 				26A6870E19202A35000FD7E5 /* TGLUser.m in Sources */,
+				2641E82619C59301007BBB21 /* TGLTimeEntryService.m in Sources */,
+				2641E82B19C5AA5D007BBB21 /* TGLProjectService.m in Sources */,
 				26AC554D19A792ED000899C5 /* TGLTimeEntry+NSCoder.m in Sources */,
 				262E5EF3195B6D7300030A45 /* TGLTimeEntry+Json.m in Sources */,
 			);
@@ -269,6 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260EC08919ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m in Sources */,
+				260EC08719AD80D2001D3A87 /* TGLUserTests.m in Sources */,
 				261542AF1918C657006B33E2 /* TGLTimeEntryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +452,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "iTogglLibTests/iTogglLibTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -420,6 +474,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
 				INFOPLIST_FILE = "iTogglLibTests/iTogglLibTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};

@@ -16,25 +16,13 @@
 
 @implementation TGLTimeEntryTests
 
-- (void)setUp
-{
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
-
-- (void)tearDown
-{
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
 - (void)testThatInitWithIdentifierAndDescriptionAndStartAndPidSetsCorrespondingProperties
 {
     TGLTimeEntry *entry = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
     
     XCTAssertEqual(123, entry.identifier);
-    XCTAssertEqual(@"Test", entry.description);
-    XCTAssertEqual([NSDate dateWithTimeIntervalSince1970:456].timeIntervalSince1970, entry.start.timeIntervalSince1970);
+    XCTAssertEqualObjects(@"Test", entry.description);
+    XCTAssertEqualObjects([NSDate dateWithTimeIntervalSince1970:456], entry.start);
     XCTAssertEqual(789, entry.pid);
 }
 

@@ -17,7 +17,7 @@
     NSString *description = [dictionary objectForKey:@"description"];
     NSDate *start = [[TGLTogglClient formatter] dateFromString:[dictionary objectForKey:@"start"]];
     NSNumber *pid = [dictionary objectForKey:@"pid"];
-    return [[TGLTimeEntry alloc]initWithIdentifier:[identifier integerValue] andDescription:description andStart:start andPid:[pid integerValue]];
+    return [[TGLTimeEntry alloc] initWithIdentifier:[identifier integerValue] andDescription:description andStart:start andPid:[pid integerValue]];
 }
 
 - (NSDictionary *)dictionary
