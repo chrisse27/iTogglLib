@@ -14,4 +14,7 @@
 
 - (instancetype)initWithClient:(TGLTogglClient *)client;
 
+- (NSArray *)allProjects;
+- (NSDictionary *)allProjectsByIdentifier;
+
 @end

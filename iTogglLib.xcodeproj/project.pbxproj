@@ -31,6 +31,15 @@
 		2641E82C19C5AA6C007BBB21 /* TGLProjectService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E82919C5AA5D007BBB21 /* TGLProjectService.h */; };
 		2641E83119C622FE007BBB21 /* TGLUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83019C622FE007BBB21 /* TGLUserService.m */; };
 		2641E83219C628B3007BBB21 /* TGLUserService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E82F19C622FE007BBB21 /* TGLUserService.h */; };
+		2641E83519C6C6AD007BBB21 /* TGLProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83419C6C6AD007BBB21 /* TGLProject.m */; };
+		2641E83B19C75608007BBB21 /* TGLProject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83A19C75608007BBB21 /* TGLProject+Json.m */; };
+		2641E83D19C759E0007BBB21 /* TGLProject+JsonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83C19C759E0007BBB21 /* TGLProject+JsonTest.m */; };
+		269381CD19D36A020020D5C1 /* TGLWorkspaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */; };
+		269381D119D36AD10020D5C1 /* TGLWorkspace.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381D019D36AD10020D5C1 /* TGLWorkspace.m */; };
+		269381DB19D377C10020D5C1 /* TGLWorkspace+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */; };
+		269381DC19D37F570020D5C1 /* TGLProject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E83319C6C6AD007BBB21 /* TGLProject.h */; };
+		269381DD19D37F570020D5C1 /* TGLWorkspace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 269381CF19D36AD10020D5C1 /* TGLWorkspace.h */; };
+		269381DE19D37F570020D5C1 /* TGLWorkspaceService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 269381CB19D36A020020D5C1 /* TGLWorkspaceService.h */; };
 		26A6870E19202A35000FD7E5 /* TGLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6870D19202A35000FD7E5 /* TGLUser.m */; };
 		26AC554D19A792ED000899C5 /* TGLTimeEntry+NSCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */; };
 /* End PBXBuildFile section */
@@ -52,6 +61,9 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				269381DC19D37F570020D5C1 /* TGLProject.h in CopyFiles */,
+				269381DD19D37F570020D5C1 /* TGLWorkspace.h in CopyFiles */,
+				269381DE19D37F570020D5C1 /* TGLWorkspaceService.h in CopyFiles */,
 				2641E83219C628B3007BBB21 /* TGLUserService.h in CopyFiles */,
 				2641E82C19C5AA6C007BBB21 /* TGLProjectService.h in CopyFiles */,
 				2641E82819C59BC2007BBB21 /* TGLTimeEntryService.h in CopyFiles */,
@@ -91,6 +103,19 @@
 		2641E82A19C5AA5D007BBB21 /* TGLProjectService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLProjectService.m; sourceTree = "<group>"; };
 		2641E82F19C622FE007BBB21 /* TGLUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLUserService.h; sourceTree = "<group>"; };
 		2641E83019C622FE007BBB21 /* TGLUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUserService.m; sourceTree = "<group>"; };
+		2641E83319C6C6AD007BBB21 /* TGLProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLProject.h; sourceTree = "<group>"; };
+		2641E83419C6C6AD007BBB21 /* TGLProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLProject.m; sourceTree = "<group>"; };
+		2641E83619C6CB78007BBB21 /* TGLProject+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLProject+Protected.h"; sourceTree = "<group>"; };
+		2641E83919C75608007BBB21 /* TGLProject+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLProject+Json.h"; sourceTree = "<group>"; };
+		2641E83A19C75608007BBB21 /* TGLProject+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLProject+Json.m"; sourceTree = "<group>"; };
+		2641E83C19C759E0007BBB21 /* TGLProject+JsonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLProject+JsonTest.m"; sourceTree = "<group>"; };
+		269381CB19D36A020020D5C1 /* TGLWorkspaceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLWorkspaceService.h; sourceTree = "<group>"; };
+		269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLWorkspaceService.m; sourceTree = "<group>"; };
+		269381CF19D36AD10020D5C1 /* TGLWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLWorkspace.h; sourceTree = "<group>"; };
+		269381D019D36AD10020D5C1 /* TGLWorkspace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLWorkspace.m; sourceTree = "<group>"; };
+		269381D819D36C4E0020D5C1 /* TGLWorkspace+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TGLWorkspace+Protected.h"; sourceTree = "<group>"; };
+		269381D919D377C10020D5C1 /* TGLWorkspace+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLWorkspace+Json.h"; sourceTree = "<group>"; };
+		269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLWorkspace+Json.m"; sourceTree = "<group>"; };
 		26A6870C19202A35000FD7E5 /* TGLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLUser.h; sourceTree = "<group>"; };
 		26A6870D19202A35000FD7E5 /* TGLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUser.m; sourceTree = "<group>"; };
 		26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLTimeEntry+NSCoder.h"; sourceTree = "<group>"; };
@@ -173,6 +198,7 @@
 				260EC08819ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m */,
 				260EC08619AD80D1001D3A87 /* TGLUserTests.m */,
 				261542A91918C657006B33E2 /* Supporting Files */,
+				2641E83C19C759E0007BBB21 /* TGLProject+JsonTest.m */,
 			);
 			path = iTogglLibTests;
 			sourceTree = "<group>";
@@ -189,17 +215,10 @@
 		2641E82D19C621C5007BBB21 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				269381CE19D36AA80020D5C1 /* Models */,
 				2641E82E19C622DE007BBB21 /* Services */,
 				261542C11918C6D5006B33E2 /* TGLTogglClient.h */,
 				261542C21918C6D5006B33E2 /* TGLTogglClient.m */,
-				261542C31918C6D5006B33E2 /* TGLTimeEntry.h */,
-				261542C41918C6D5006B33E2 /* TGLTimeEntry.m */,
-				262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */,
-				262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */,
-				26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */,
-				26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */,
-				26A6870C19202A35000FD7E5 /* TGLUser.h */,
-				26A6870D19202A35000FD7E5 /* TGLUser.m */,
 				261542971918C656006B33E2 /* iTogglLib.h */,
 			);
 			path = Classes;
@@ -214,8 +233,35 @@
 				2641E82A19C5AA5D007BBB21 /* TGLProjectService.m */,
 				2641E82F19C622FE007BBB21 /* TGLUserService.h */,
 				2641E83019C622FE007BBB21 /* TGLUserService.m */,
+				269381CB19D36A020020D5C1 /* TGLWorkspaceService.h */,
+				269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		269381CE19D36AA80020D5C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				261542C31918C6D5006B33E2 /* TGLTimeEntry.h */,
+				261542C41918C6D5006B33E2 /* TGLTimeEntry.m */,
+				262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */,
+				262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */,
+				26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */,
+				26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */,
+				26A6870C19202A35000FD7E5 /* TGLUser.h */,
+				26A6870D19202A35000FD7E5 /* TGLUser.m */,
+				2641E83319C6C6AD007BBB21 /* TGLProject.h */,
+				2641E83419C6C6AD007BBB21 /* TGLProject.m */,
+				2641E83619C6CB78007BBB21 /* TGLProject+Protected.h */,
+				2641E83919C75608007BBB21 /* TGLProject+Json.h */,
+				2641E83A19C75608007BBB21 /* TGLProject+Json.m */,
+				269381CF19D36AD10020D5C1 /* TGLWorkspace.h */,
+				269381D019D36AD10020D5C1 /* TGLWorkspace.m */,
+				269381D819D36C4E0020D5C1 /* TGLWorkspace+Protected.h */,
+				269381D919D377C10020D5C1 /* TGLWorkspace+Json.h */,
+				269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,13 +347,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				261542C61918C6D5006B33E2 /* TGLTimeEntry.m in Sources */,
+				2641E83B19C75608007BBB21 /* TGLProject+Json.m in Sources */,
 				261542C51918C6D5006B33E2 /* TGLTogglClient.m in Sources */,
 				2641E83119C622FE007BBB21 /* TGLUserService.m in Sources */,
 				26A6870E19202A35000FD7E5 /* TGLUser.m in Sources */,
 				2641E82619C59301007BBB21 /* TGLTimeEntryService.m in Sources */,
 				2641E82B19C5AA5D007BBB21 /* TGLProjectService.m in Sources */,
 				26AC554D19A792ED000899C5 /* TGLTimeEntry+NSCoder.m in Sources */,
+				269381CD19D36A020020D5C1 /* TGLWorkspaceService.m in Sources */,
 				262E5EF3195B6D7300030A45 /* TGLTimeEntry+Json.m in Sources */,
+				2641E83519C6C6AD007BBB21 /* TGLProject.m in Sources */,
+				269381D119D36AD10020D5C1 /* TGLWorkspace.m in Sources */,
+				269381DB19D377C10020D5C1 /* TGLWorkspace+Json.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +369,7 @@
 				260EC08919ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m in Sources */,
 				260EC08719AD80D2001D3A87 /* TGLUserTests.m in Sources */,
 				261542AF1918C657006B33E2 /* TGLTimeEntryTests.m in Sources */,
+				2641E83D19C759E0007BBB21 /* TGLProject+JsonTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

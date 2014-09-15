@@ -21,6 +21,8 @@ NSDateFormatter * TogglDateFormat = nil;
 
 @synthesize user = _user;
 @synthesize timeEntry = _timeEntry;
+@synthesize project = _project;
+@synthesize workspace = _workspace;
 
 - (id)initWithUserName:(NSString*)username AndPassword:(NSString *)password
 {
@@ -52,6 +54,24 @@ NSDateFormatter * TogglDateFormat = nil;
     }
     
     return _timeEntry;
+}
+
+- (TGLProjectService *)project
+{
+    if (!_project) {
+        _project = [[TGLProjectService alloc] initWithClient:self];
+    }
+    
+    return _project;
+}
+
+- (TGLWorkspaceService *)workspace
+{
+    if (!_workspace) {
+        _workspace = [[TGLWorkspaceService alloc] initWithClient:self];
+    }
+    
+    return _workspace;
 }
 
 - (NSDictionary *)itemByGetWithRelativeURL:(NSString *)url

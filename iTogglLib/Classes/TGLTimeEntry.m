@@ -16,6 +16,8 @@
 
 @implementation TGLTimeEntry
 
+@synthesize description = _description;
+
 - (id)initWithIdentifier:(NSInteger) identifier andDescription:(NSString *)description andStart:(NSDate *)start andPid:(NSInteger) pid
 {
     self = [super init];
