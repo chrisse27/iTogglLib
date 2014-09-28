@@ -19,6 +19,7 @@
     
     project.identifier = [[dictionary objectForKey:@"id"] integerValue];
     project.name = [dictionary objectForKey:@"name"];
+    project.color = [[dictionary objectForKey:@"color"] integerValue];
     
     return project;
 }
