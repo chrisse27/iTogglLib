@@ -16,8 +16,9 @@
     NSNumber *identifier = [dictionary objectForKey:@"id"];
     NSString *description = [dictionary objectForKey:@"description"];
     NSDate *start = [[TGLTogglClient formatter] dateFromString:[dictionary objectForKey:@"start"]];
+    NSDate *stop = [[TGLTogglClient formatter] dateFromString:[dictionary objectForKey:@"stop"]];
     NSNumber *pid = [dictionary objectForKey:@"pid"];
-    return [[TGLTimeEntry alloc] initWithIdentifier:[identifier integerValue] andDescription:description andStart:start andPid:[pid integerValue]];
+    return [[TGLTimeEntry alloc] initWithIdentifier:[identifier integerValue] andDescription:description andStart:start andStop:stop andPid:[pid integerValue]];
 }
 
 - (NSDictionary *)dictionary

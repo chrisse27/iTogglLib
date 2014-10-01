@@ -14,8 +14,9 @@
 @property (nonatomic, readonly) NSString *description;
 @property (nonatomic, readonly) NSInteger pid;
 @property (nonatomic, readonly) NSDate *start;
+@property (nonatomic, readonly) NSDate *stop;
 
-- (id)initWithIdentifier:(NSInteger) identifier andDescription:(NSString *)description andStart:(NSDate *)start andPid:(NSInteger) pid;
+- (id)initWithIdentifier:(NSInteger) identifier andDescription:(NSString *)description andStart:(NSDate *)start andStop:(NSDate *)stop andPid:(NSInteger) pid;
 - (BOOL)isEqualToTimeEntry:(TGLTimeEntry *)entry;
 
 @end

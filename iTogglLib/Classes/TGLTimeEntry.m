@@ -18,7 +18,7 @@
 
 @synthesize description = _description;
 
-- (id)initWithIdentifier:(NSInteger) identifier andDescription:(NSString *)description andStart:(NSDate *)start andPid:(NSInteger) pid
+- (id)initWithIdentifier:(NSInteger) identifier andDescription:(NSString *)description andStart:(NSDate *)start andStop:(NSDate *)stop andPid:(NSInteger) pid
 {
     self = [super init];
     
@@ -26,6 +26,7 @@
         _identifier = identifier;
         _description = description;
         _start = start;
+        _stop = stop;
         _pid = pid;
     }
     
