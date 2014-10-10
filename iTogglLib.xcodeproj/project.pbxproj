@@ -105,7 +105,6 @@
 		2641E83019C622FE007BBB21 /* TGLUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUserService.m; sourceTree = "<group>"; };
 		2641E83319C6C6AD007BBB21 /* TGLProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLProject.h; sourceTree = "<group>"; };
 		2641E83419C6C6AD007BBB21 /* TGLProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLProject.m; sourceTree = "<group>"; };
-		2641E83619C6CB78007BBB21 /* TGLProject+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLProject+Protected.h"; sourceTree = "<group>"; };
 		2641E83919C75608007BBB21 /* TGLProject+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLProject+Json.h"; sourceTree = "<group>"; };
 		2641E83A19C75608007BBB21 /* TGLProject+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLProject+Json.m"; sourceTree = "<group>"; };
 		2641E83C19C759E0007BBB21 /* TGLProject+JsonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLProject+JsonTest.m"; sourceTree = "<group>"; };
@@ -113,7 +112,6 @@
 		269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLWorkspaceService.m; sourceTree = "<group>"; };
 		269381CF19D36AD10020D5C1 /* TGLWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLWorkspace.h; sourceTree = "<group>"; };
 		269381D019D36AD10020D5C1 /* TGLWorkspace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLWorkspace.m; sourceTree = "<group>"; };
-		269381D819D36C4E0020D5C1 /* TGLWorkspace+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TGLWorkspace+Protected.h"; sourceTree = "<group>"; };
 		269381D919D377C10020D5C1 /* TGLWorkspace+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLWorkspace+Json.h"; sourceTree = "<group>"; };
 		269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLWorkspace+Json.m"; sourceTree = "<group>"; };
 		26A6870C19202A35000FD7E5 /* TGLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLUser.h; sourceTree = "<group>"; };
@@ -252,12 +250,10 @@
 				26A6870D19202A35000FD7E5 /* TGLUser.m */,
 				2641E83319C6C6AD007BBB21 /* TGLProject.h */,
 				2641E83419C6C6AD007BBB21 /* TGLProject.m */,
-				2641E83619C6CB78007BBB21 /* TGLProject+Protected.h */,
 				2641E83919C75608007BBB21 /* TGLProject+Json.h */,
 				2641E83A19C75608007BBB21 /* TGLProject+Json.m */,
 				269381CF19D36AD10020D5C1 /* TGLWorkspace.h */,
 				269381D019D36AD10020D5C1 /* TGLWorkspace.m */,
-				269381D819D36C4E0020D5C1 /* TGLWorkspace+Protected.h */,
 				269381D919D377C10020D5C1 /* TGLWorkspace+Json.h */,
 				269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */,
 			);

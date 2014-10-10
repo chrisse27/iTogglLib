@@ -13,20 +13,29 @@
 
 + (TGLTimeEntry *)timeEntryFromDictionary:(NSDictionary *)dictionary
 {
-    NSNumber *identifier = [dictionary objectForKey:@"id"];
-    NSString *description = [dictionary objectForKey:@"description"];
-    NSDate *start = [[TGLTogglClient formatter] dateFromString:[dictionary objectForKey:@"start"]];
-    NSDate *stop = [[TGLTogglClient formatter] dateFromString:[dictionary objectForKey:@"stop"]];
-    NSNumber *pid = [dictionary objectForKey:@"pid"];
-    return [[TGLTimeEntry alloc] initWithIdentifier:[identifier integerValue] andDescription:description andStart:start andStop:stop andPid:[pid integerValue]];
+    TGLTimeEntry *entry = [[TGLTimeEntry alloc] init];
+    
+    entry.identifier = [[dictionary objectForKey:@"id"] integerValue];
+    entry.entryDescription = [dictionary objectForKey:@"description"];
+    entry.start = [[TGLTogglClient formatter] dateFromString:[dictionary objectForKey:@"start"]];
+    entry.stop = [[TGLTogglClient formatter] dateFromString:[dictionary objectForKey:@"stop"]];
+    entry.pid = [[dictionary objectForKey:@"pid"] integerValue];
+
+    return entry;
 }
 
 - (NSDictionary *)dictionary
 {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     
-    [dict setValue:self.description forKey:@"description"];
+    [dict setValue:self.entryDescription forKey:@"description"];
     [dict setValue:[NSNumber numberWithInteger:self.pid] forKey:@"pid"];
+    if (self.start) {
+        [dict setValue:[[TGLTogglClient formatter] stringFromDate:self.start] forKey:@"start"];
+    }
+    if (self.stop) {
+        [dict setValue:[[TGLTogglClient formatter] stringFromDate:self.stop] forKey:@"stop"];
+    }
 
     return [NSDictionary dictionaryWithObject:dict forKey:@"time_entry"];
 }

@@ -8,13 +8,6 @@
 
 #import "TGLWorkspace.h"
 
-@interface TGLWorkspace ()
-
-@property (nonatomic, readwrite) NSInteger identifier;
-@property (nonatomic, readwrite) NSString *name;
-
-@end
-
 @implementation TGLWorkspace
 
 @end

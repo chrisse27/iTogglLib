@@ -8,8 +8,6 @@
 
 #import "TGLWorkspace+Json.h"
 
-#import "TGLWorkspace+Protected.h"
-
 @implementation TGLWorkspace (Json)
 
 + (TGLWorkspace *)workspaceFromDictionary:(NSDictionary *)dictionary

@@ -16,62 +16,82 @@
 
 @implementation TGLTimeEntryTests
 
-- (void)testThatInitWithIdentifierAndDescriptionAndStartAndPidSetsCorrespondingProperties
-{
-    TGLTimeEntry *entry = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
-    
-    XCTAssertEqual(123, entry.identifier);
-    XCTAssertEqualObjects(@"Test", entry.description);
-    XCTAssertEqualObjects([NSDate dateWithTimeIntervalSince1970:456], entry.start);
-    XCTAssertEqual(789, entry.pid);
-}
-
 - (void)testThatIsEqualToTimeEntryReturnsTrueWhenDescriptionsAndPidsAreEqual
 {
-    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
+    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] init];
+    entry1.identifier = 123;
+    entry1.entryDescription = @"Test";
+    entry1.pid = 789;
 
-    TGLTimeEntry *entry2 = [[TGLTimeEntry alloc] initWithIdentifier:234 andDescription:@"Test" andStart:[NSDate dateWithTimeIntervalSince1970:567] andPid:789];
+    TGLTimeEntry *entry2 = [[TGLTimeEntry alloc] init];
+    entry2.identifier = 123;
+    entry2.entryDescription = @"Test";
+    entry2.pid = 789;
     
     XCTAssertTrue([entry1 isEqualToTimeEntry:entry2]);
 }
 
 - (void)testThatIsEqualToTimeEntryReturnsTrueWhenArgumentsAreIdentical
 {
-    TGLTimeEntry *entry = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
+    TGLTimeEntry *entry = [[TGLTimeEntry alloc] init];
+    entry.identifier = 123;
+    entry.entryDescription = @"Test";
+    entry.pid = 789;
     
     XCTAssertTrue([entry isEqualToTimeEntry:entry]);
 }
 
 - (void)testThatIsEqualToTimeEntryReturnsFalseWhenDescriptionsAreEqualButPidsAreNotEqual
 {
-    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
-    
-    TGLTimeEntry *entry2 = [[TGLTimeEntry alloc] initWithIdentifier:234 andDescription:@"Test" andStart:[NSDate dateWithTimeIntervalSince1970:567] andPid:890];
+    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] init];
+    entry1.identifier = 123;
+    entry1.entryDescription = @"Test";
+    entry1.pid = 789;
+
+    TGLTimeEntry *entry2 = [[TGLTimeEntry alloc] init];
+    entry2.identifier = 123;
+    entry2.entryDescription = @"Test";
+    entry2.pid = 890;
     
     XCTAssertFalse([entry1 isEqualToTimeEntry:entry2]);
 }
 
 - (void)testThatIsEqualToTimeEntryReturnsFalseWhenDescriptionsAreNotEqualButPidsAreEqual
 {
-    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test1" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
+    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] init];
+    entry1.identifier = 123;
+    entry1.entryDescription = @"Test1";
+    entry1.pid = 789;
     
-    TGLTimeEntry *entry2 = [[TGLTimeEntry alloc] initWithIdentifier:234 andDescription:@"Test2" andStart:[NSDate dateWithTimeIntervalSince1970:567] andPid:789];
+    TGLTimeEntry *entry2 = [[TGLTimeEntry alloc] init];
+    entry2.identifier = 123;
+    entry2.entryDescription = @"Test2";
+    entry2.pid = 789;
     
     XCTAssertFalse([entry1 isEqualToTimeEntry:entry2]);
 }
 
 - (void)testThatIsEqualToTimeEntryReturnsFalseWhenDescriptionsAndPidsAreNotEqual
 {
-    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test1" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
+    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] init];
+    entry1.identifier = 123;
+    entry1.entryDescription = @"Test1";
+    entry1.pid = 789;
     
-    TGLTimeEntry *entry2 = [[TGLTimeEntry alloc] initWithIdentifier:234 andDescription:@"Test2" andStart:[NSDate dateWithTimeIntervalSince1970:567] andPid:890];
+    TGLTimeEntry *entry2 = [[TGLTimeEntry alloc] init];
+    entry2.identifier = 123;
+    entry2.entryDescription = @"Test2";
+    entry2.pid = 890;
     
     XCTAssertFalse([entry1 isEqualToTimeEntry:entry2]);
 }
 
 - (void)testThatIsEqualReturnsFalseWhenComparingWithObjectThatIsNotATimeEntry
 {
-    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test1" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
+    TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] init];
+    entry1.identifier = 123;
+    entry1.entryDescription = @"Test1";
+    entry1.pid = 789;
     
     NSObject *object = [[NSObject alloc] init];
     

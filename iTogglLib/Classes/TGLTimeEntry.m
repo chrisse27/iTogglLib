@@ -11,12 +11,9 @@
 #import "TGLTogglClient.h"
 
 @interface TGLTimeEntry ()
-@property (nonatomic, readwrite) NSInteger pid;
 @end
 
 @implementation TGLTimeEntry
-
-@synthesize description = _description;
 
 - (id)initWithIdentifier:(NSInteger) identifier andDescription:(NSString *)description andStart:(NSDate *)start andStop:(NSDate *)stop andPid:(NSInteger) pid
 {
@@ -24,7 +21,7 @@
     
     if (self) {
         _identifier = identifier;
-        _description = description;
+        _entryDescription = description;
         _start = start;
         _stop = stop;
         _pid = pid;
@@ -48,14 +45,14 @@
 
 - (BOOL)isEqualToTimeEntry:(TGLTimeEntry *)entry
 {
-    BOOL haveSameDescription = (!self.description && !entry.description) || [self.description isEqualToString:entry.description];
+    BOOL haveSameDescription = (!self.entryDescription && !entry.entryDescription) || [self.entryDescription isEqualToString:entry.entryDescription];
     BOOL haveSamePid = self.pid == entry.pid;
     
     return haveSameDescription && haveSamePid;
 }
 
 - (NSUInteger)hash {
-    return [self.description hash] ^ self.pid;
+    return [self.entryDescription hash] ^ self.pid;
 }
 
 @end

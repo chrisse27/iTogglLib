@@ -28,20 +28,32 @@
     TGLTimeEntry *entry = [TGLTimeEntry timeEntryFromDictionary:dictionary];
     
     XCTAssertEqual(123, entry.identifier);
-    XCTAssertEqualObjects(@"TestDescription", entry.description);
+    XCTAssertEqualObjects(@"TestDescription", entry.entryDescription);
     XCTAssertEqualObjects([NSDate dateWithTimeIntervalSince1970:1.0], entry.start);
     XCTAssertEqual(789, entry.pid);
 };
 
-- (void)testThatDictionaryContainsDescriptionAndPidOfTimeEntry
+- (void)testThatDictionaryContainsDescriptionOfTimeEntry
 {
-    TGLTimeEntry *entry = [[TGLTimeEntry alloc] initWithIdentifier:123 andDescription:@"Test" andStart:[NSDate dateWithTimeIntervalSince1970:456] andPid:789];
+    TGLTimeEntry *entry = [[TGLTimeEntry alloc] init];
+    entry.entryDescription = @"Test";
     
     NSDictionary *dictionary = [entry dictionary];
     
     NSDictionary *timeEntryDict = [dictionary objectForKey:@"time_entry"];
     
     XCTAssertEqualObjects(@"Test", [timeEntryDict objectForKey:@"description"]);
+}
+
+- (void)testThatDictionaryContainsPidOfTimeEntry
+{
+    TGLTimeEntry *entry = [[TGLTimeEntry alloc] init];
+    entry.pid = 789;
+    
+    NSDictionary *dictionary = [entry dictionary];
+    
+    NSDictionary *timeEntryDict = [dictionary objectForKey:@"time_entry"];
+    
     XCTAssertEqualObjects([NSNumber numberWithInteger:789], [timeEntryDict objectForKey:@"pid"]);
 }
 

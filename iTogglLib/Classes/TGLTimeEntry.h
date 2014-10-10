@@ -10,13 +10,12 @@
 
 @interface TGLTimeEntry : NSObject
 
-@property (nonatomic, readonly) NSInteger identifier;
-@property (nonatomic, readonly) NSString *description;
-@property (nonatomic, readonly) NSInteger pid;
-@property (nonatomic, readonly) NSDate *start;
-@property (nonatomic, readonly) NSDate *stop;
+@property (nonatomic, readwrite) NSInteger identifier;
+@property (nonatomic, readwrite) NSString *entryDescription;
+@property (nonatomic, readwrite) NSInteger pid;
+@property (nonatomic, readwrite) NSDate *start;
+@property (nonatomic, readwrite) NSDate *stop;
 
-- (id)initWithIdentifier:(NSInteger) identifier andDescription:(NSString *)description andStart:(NSDate *)start andStop:(NSDate *)stop andPid:(NSInteger) pid;
 - (BOOL)isEqualToTimeEntry:(TGLTimeEntry *)entry;
 
 @end

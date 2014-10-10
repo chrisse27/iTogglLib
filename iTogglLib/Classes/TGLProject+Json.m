@@ -8,7 +8,6 @@
 
 #import "TGLProject+Json.h"
 
-#import "TGLProject+Protected.h"
 #import "TGLTogglClient.h"
 
 @implementation TGLProject (Json)

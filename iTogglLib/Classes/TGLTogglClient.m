@@ -164,7 +164,7 @@ NSDateFormatter * TogglDateFormat = nil;
         NSLocale *enUSPOSIXLocale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
         
         [rfc3339DateFormatter setLocale:enUSPOSIXLocale];
-        [rfc3339DateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ssZ"];
+        [rfc3339DateFormatter setDateFormat:@"yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZZZ"];
         [rfc3339DateFormatter setTimeZone:[NSTimeZone localTimeZone]];
         
         TogglDateFormat = rfc3339DateFormatter;

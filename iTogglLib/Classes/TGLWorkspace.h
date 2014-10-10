@@ -12,10 +12,10 @@
 
 /* (id)
  */
-@property (nonatomic, readonly) NSInteger identifier;
+@property (nonatomic) NSInteger identifier;
 
 /* The name of the workspace (string)
  */
-@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, strong) NSString *name;
 
 @end

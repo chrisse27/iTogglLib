@@ -13,19 +13,21 @@
 - (void)encodeWithCoder:(NSCoder *)encoder {
     [encoder encodeObject:[NSNumber numberWithInteger:self.identifier] forKey:@"identifier"];
     [encoder encodeObject:[NSNumber numberWithInteger:self.pid] forKey:@"pid"];
-    [encoder encodeObject:self.description forKey:@"description"];
+    [encoder encodeObject:self.entryDescription forKey:@"description"];
     [encoder encodeObject:self.start forKey:@"start"];
     [encoder encodeObject:self.stop forKey:@"stop"];
 }
 
 - (id)initWithCoder:(NSCoder *)decoder {
-    NSNumber *identifier = [decoder decodeObjectForKey:@"identifier"];
-    NSString *description = [decoder decodeObjectForKey:@"description"];
-    NSDate *start = [decoder decodeObjectForKey:@"start"];
-    NSDate *stop = [decoder decodeObjectForKey:@"stop"];
-    NSNumber *pid = [decoder decodeObjectForKey:@"pid"];
+    TGLTimeEntry *entry = [[TGLTimeEntry alloc] init];
     
-    return [self initWithIdentifier:[identifier integerValue] andDescription:description andStart:start andStop:stop andPid:[pid integerValue]];
+    entry.identifier = [[decoder decodeObjectForKey:@"identifier"] integerValue];
+    entry.entryDescription = [decoder decodeObjectForKey:@"description"];
+    entry.start = [decoder decodeObjectForKey:@"start"];
+    entry.stop = [decoder decodeObjectForKey:@"stop"];
+    entry.pid = [[decoder decodeObjectForKey:@"pid"] integerValue];
+    
+    return entry;
 }
 
 @end
