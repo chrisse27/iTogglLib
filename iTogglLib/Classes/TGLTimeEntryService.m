@@ -15,6 +15,8 @@ NSString * const TGLTimeEntryServiceUrl = @"time_entries";
 NSString * const TGLTimeEntryCurrentUrl = @"/current";
 NSString * const TGLTimeEntryStartUrl = @"/start";
 NSString * const TGLTimeEntryStopUrl = @"/%ld/stop";
+NSString * const TGLTimeEntryUpdateUrl = @"/%ld";
+NSString * const TGLTimeEntryDeleteUrl = @"/%ld";
 
 @interface TGLTimeEntryService ()
 @property (strong) TGLTogglClient *client;
@@ -132,13 +134,59 @@ NSString * const TGLTimeEntryStopUrl = @"/%ld/stop";
     id value = [jsonDict objectForKey:@"data"];
     if (value == [NSNull null]) {
         // handle no entry
-        NSLog(@"No current time entry.");
+        NSLog(@"No stopped time entry.");
         return nil;
     }
     
     // return stopped time entry
     NSDictionary *valueDict = (NSDictionary *) value;
     return [TGLTimeEntry timeEntryFromDictionary:valueDict];
+}
+
+- (TGLTimeEntry *)updateTimeEntry:(TGLTimeEntry *)entry
+{
+    NSMutableString *url = [NSMutableString stringWithString:TGLTimeEntryServiceUrl];
+    [url appendFormat:TGLTimeEntryUpdateUrl, (long)entry.identifier];
+    NSMutableURLRequest *request = [self.client createRequestForRelativeURL:url withMethod:@"PUT"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    
+    NSDictionary *dataDict = [entry dictionary];
+    NSError *error = nil;
+    NSData *data = [NSJSONSerialization dataWithJSONObject:dataDict options:NSJSONWritingPrettyPrinted error:&error];
+    if (error) {
+        NSLog(@"Error while serializing data: %@", error.localizedDescription);
+        return nil;
+    }
+    [request setHTTPBody:data];
+    
+    id responsePayload = [self.client sendRequest:request];
+    if (![responsePayload isKindOfClass:[NSDictionary class]]) {
+        NSLog(@"Unexpected format.");
+        return nil;
+    }
+    
+    NSDictionary *jsonDict = responsePayload;
+    id value = [jsonDict objectForKey:@"data"];
+    if (value == [NSNull null]) {
+        // handle no entry
+        NSLog(@"No updated time entry.");
+        return nil;
+    }
+    
+    // return stopped time entry
+    NSDictionary *valueDict = (NSDictionary *) value;
+    return [TGLTimeEntry timeEntryFromDictionary:valueDict];
+}
+
+- (BOOL)deleteTimeEntry:(TGLTimeEntry *)entry
+{
+    NSMutableString *url = [NSMutableString stringWithString:TGLTimeEntryServiceUrl];
+    [url appendFormat:TGLTimeEntryDeleteUrl, (long)entry.identifier];
+    NSMutableURLRequest *request = [self.client createRequestForRelativeURL:url withMethod:@"DELETE"];
+    
+    id responsePayload = [self.client sendRequest:request];
+    
+    return responsePayload != nil;
 }
 
 @end

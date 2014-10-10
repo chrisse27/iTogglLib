@@ -21,5 +21,7 @@
 - (NSArray *)entriesBetween:(NSDate *)start And:(NSDate *)end;
 - (TGLTimeEntry *)createAndStartTimeEntry:(TGLTimeEntry *)entry;
 - (TGLTimeEntry *)stopTimeEntry:(TGLTimeEntry *)entry;
+- (TGLTimeEntry *)updateTimeEntry:(TGLTimeEntry *)entry;
+- (BOOL)deleteTimeEntry:(TGLTimeEntry *)entry;
 
 @end
