@@ -36,6 +36,7 @@ static NSString * const TGLJsonKeyTimeEntryCreatedWith = @"created_with";
 {
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     
+    [dict setValue:@"iTogglLib" forKey:@"created_with"];
     
     [dict setValue:self.entryDescription forKey:TGLJsonKeyTimeEntryDescription];
     [dict setValue:[NSNumber numberWithInteger:self.pid] forKey:TGLJsonKeyTimeEntryProjectId];
