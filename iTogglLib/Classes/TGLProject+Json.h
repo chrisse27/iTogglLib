@@ -12,6 +12,4 @@
 
 + (TGLProject *)projectFromDictionary:(NSDictionary *)dictionary;
 
-- (NSDictionary *)dictionary;
-
 @end

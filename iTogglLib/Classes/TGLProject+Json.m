@@ -10,22 +10,21 @@
 
 #import "TGLTogglClient.h"
 
+static NSString * const TGLJsonKeyProjectIdentifier = @"id";
+static NSString * const TGLJsonKeyProjectName = @"name";
+static NSString * const TGLJsonKeyProjectColor = @"color";
+
 @implementation TGLProject (Json)
 
 + (TGLProject *)projectFromDictionary:(NSDictionary *)dictionary
 {
     TGLProject *project = [[TGLProject alloc] init];
     
-    project.identifier = [[dictionary objectForKey:@"id"] integerValue];
-    project.name = [dictionary objectForKey:@"name"];
-    project.color = [[dictionary objectForKey:@"color"] integerValue];
+    project.identifier = [[dictionary objectForKey:TGLJsonKeyProjectIdentifier] integerValue];
+    project.name = [dictionary objectForKey:TGLJsonKeyProjectName];
+    project.color = [[dictionary objectForKey:TGLJsonKeyProjectColor] integerValue];
     
     return project;
-}
-
-- (NSDictionary *)dictionary
-{
-    return nil;
 }
 
 @end

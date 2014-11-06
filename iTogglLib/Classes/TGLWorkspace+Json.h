@@ -12,6 +12,4 @@
 
 + (TGLWorkspace *)workspaceFromDictionary:(NSDictionary *)dictionary;
 
-- (NSDictionary *)dictionary;
-
 @end

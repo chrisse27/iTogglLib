@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 
+#import "TGLProject.h"
 #import "TGLProject+Json.h"
 
 @interface TGLProject_JsonTest : XCTestCase
@@ -16,16 +17,18 @@
 
 @implementation TGLProject_JsonTest
 
-- (void)testExample
+- (void)testThatProjectFromDictionaryReturnsCorrectPRoject
 {
     NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
                                 @123, @"id",
                                 @"TestName", @"name",
+                                @11, @"color",
                                 nil];
     TGLProject *project = [TGLProject projectFromDictionary:dictionary];
     
     XCTAssertEqual(123, project.identifier);
     XCTAssertEqualObjects(@"TestName", project.name);
+    XCTAssertEqual(11, project.color);
 }
 
 @end
