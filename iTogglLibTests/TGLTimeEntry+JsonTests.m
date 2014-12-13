@@ -29,13 +29,14 @@
 
 @implementation TGLTimeEntry_JsonTests
 
-- (void)testThatTimeEntryFromDictionaryReturnsCorrectEntry
+- (void)testThatTimeEntryFromDictionaryCopiesAllKnownValues
 {
     NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
                                 @123, @"id",
                                 @"TestDescription", @"description",
                                 @"1970-01-01T00:00:01+0000", @"start",
                                 @789, @"pid",
+                                @"Unknown", @"unkown",
                                 nil];
     TGLTimeEntry *entry = [TGLTimeEntry timeEntryFromDictionary:dictionary];
     
