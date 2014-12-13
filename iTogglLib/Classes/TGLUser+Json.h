@@ -1,8 +1,8 @@
 //
-//  TGLUser.h
+//  TGLUser+Json.h
 //  iTogglLib
 //
-//  Created by Christoph Krautz on 11/05/14.
+//  Created by Christoph Krautz on 13/12/14.
 //  Copyright 2014 Christoph Krautz
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,20 +18,12 @@
 //  limitations under the License.
 //
 
-#import <Foundation/Foundation.h>
+#import "TGLUser.h"
 
-@interface TGLUser : NSObject
+NSString * const TGLJsonKeyUserApiToken;
 
-/* (string)
- */
-@property (nonatomic, strong) NSString *apiToken;
+@interface TGLUser (Json)
 
-/* (string)
- */
-@property (nonatomic, strong) NSString *eMail;
-
-/* (string)
- */
-@property (nonatomic, strong) NSString *fullName;
++ (TGLUser *)userFromDictionary:(NSDictionary *)dictionary;
 
 @end

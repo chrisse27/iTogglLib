@@ -20,6 +20,10 @@
 
 #import "TGLUserService.h"
 
+#import "TGLUser+Json.h"
+
+NSString * const TGLUserMeUrl = @"me";
+
 @interface TGLUserService ()
 @property (strong) TGLTogglClient *client;
 @end
@@ -38,18 +42,14 @@
 }
 
 - (TGLUser *)currentUser
-{
-    NSString *url = @"me";
-    
-    NSDictionary *valueDict = [self.client itemByGetWithRelativeURL:url];
+{    
+    NSDictionary *valueDict = [self.client itemByGetWithRelativeURL:TGLUserMeUrl];
     if (!valueDict) {
         NSLog(@"No current user.");
         return nil;
     }
     
-    NSString *apiToken = [valueDict objectForKey:TogglApiToken];
-    
-    return [[TGLUser alloc] initWithApiToken:apiToken];
+    return [TGLUser userFromDictionary:valueDict];
 }
 
 @end

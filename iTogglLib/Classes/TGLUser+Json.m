@@ -1,8 +1,8 @@
 //
-//  TGLUserTests.m
+//  TGLUser+Json.m
 //  iTogglLib
 //
-//  Created by Christoph Krautz on 27/08/14.
+//  Created by Christoph Krautz on 13/12/14.
 //  Copyright 2014 Christoph Krautz
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,21 +18,23 @@
 //  limitations under the License.
 //
 
-#import <XCTest/XCTest.h>
+#import "TGLUser+Json.h"
 
-#import "TGLUser.h"
+NSString * const TGLJsonKeyUserApiToken = @"api_token";
+NSString * const TGLJsonKeyUserFullname = @"fullname";
+NSString * const TGLJsonKeyUserEMail = @"email";
 
-@interface TGLUserTests : XCTestCase
+@implementation TGLUser (Json)
 
-@end
-
-@implementation TGLUserTests
-
-- (void)testThatInitWithApiTokenSetsTokenProperty
++ (TGLUser *)userFromDictionary:(NSDictionary *)dictionary
 {
-    TGLUser* user = [[TGLUser alloc] initWithApiToken:@"TEST_TOKEN"];
+    TGLUser *user = [[TGLUser alloc]init];
     
-    XCTAssertEqualObjects(@"TEST_TOKEN", user.apiToken);
+    user.apiToken = [dictionary objectForKey:TGLJsonKeyUserApiToken];
+    user.fullName = [dictionary objectForKey:TGLJsonKeyUserFullname];
+    user.eMail = [dictionary objectForKey:TGLJsonKeyUserEMail];
+    
+    return user;
 }
 
 @end

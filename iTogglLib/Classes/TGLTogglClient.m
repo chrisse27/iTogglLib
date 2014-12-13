@@ -20,8 +20,9 @@
 
 #import "TGLTogglClient.h"
 
+#import "TGLUser+Json.h"
+
 NSString * const TogglApiBaseUrl = @"https://www.toggl.com/api/v8/";
-NSString * const TogglApiToken = @"api_token";
 
 NSDateFormatter * TogglDateFormat = nil;
 
@@ -36,7 +37,7 @@ NSDateFormatter * TogglDateFormat = nil;
 @synthesize project = _project;
 @synthesize workspace = _workspace;
 
-- (id)initWithUserName:(NSString*)username AndPassword:(NSString *)password
+- (instancetype)initWithUserName:(NSString*)username AndPassword:(NSString *)password
 {
     self = [super init];
     
@@ -48,6 +49,11 @@ NSDateFormatter * TogglDateFormat = nil;
     }
     
     return self;
+}
+
+- (instancetype)initWithApiToken:(NSString*)apiToken
+{
+    return [self initWithUserName:apiToken AndPassword:TGLJsonKeyUserApiToken];
 }
 
 - (TGLUserService *)user
