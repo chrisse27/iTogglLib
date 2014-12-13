@@ -47,7 +47,7 @@ FOUNDATION_EXPORT NSString * const TogglApiToken;
 
 + (NSDateFormatter *)formatter;
 
-- (id)initWithUserName:(NSString*)username AndPassword:(NSString *)password;
+- (id)initWithUserName:(NSString*)username AndPassword:(NSString *)password NS_DESIGNATED_INITIALIZER;
 
 - (NSDictionary *)itemByGetWithRelativeURL:(NSString *)urlString;
 - (NSArray *)listByGetWithRelativeURL:(NSString *)urlString;

@@ -27,7 +27,7 @@
 
 @interface TGLTimeEntryService : NSObject
 
-- (instancetype)initWithClient:(TGLTogglClient *)client;
+- (instancetype)initWithClient:(TGLTogglClient *)client NS_DESIGNATED_INITIALIZER;
 
 - (TGLTimeEntry *)currentTimeEntry;
 - (NSArray *)entriesBetween:(NSDate *)start And:(NSDate *)end;

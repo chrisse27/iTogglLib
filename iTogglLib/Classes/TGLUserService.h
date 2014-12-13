@@ -25,7 +25,7 @@
 @class TGLTogglClient;
 
 @interface TGLUserService : NSObject
-- (instancetype)initWithClient:(TGLTogglClient *)client;
+- (instancetype)initWithClient:(TGLTogglClient *)client NS_DESIGNATED_INITIALIZER;
 
 - (TGLUser *)currentUser;
 @end

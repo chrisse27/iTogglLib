@@ -24,6 +24,6 @@
 
 @property (nonatomic, readonly) NSString *apiToken;
 
-- (id)initWithApiToken:(NSString *) apiToken;
+- (id)initWithApiToken:(NSString *) apiToken NS_DESIGNATED_INITIALIZER;
 
 @end

@@ -25,7 +25,7 @@
 
 @interface TGLWorkspaceService : NSObject
 
-- (instancetype)initWithClient:(TGLTogglClient *)client;
+- (instancetype)initWithClient:(TGLTogglClient *)client NS_DESIGNATED_INITIALIZER;
 
 - (NSArray *)allWorkspaces;
 - (NSArray *)projectsOfWorkspace:(TGLWorkspace *)workspace;
