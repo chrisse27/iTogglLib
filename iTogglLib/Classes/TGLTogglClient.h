@@ -1,6 +1,6 @@
 //
 //  TGLTogglClient.h
-//  iToggl
+//  iTogglLib
 //
 //  Created by Christoph Krautz on 04/05/14.
 //  Copyright 2014 Christoph Krautz

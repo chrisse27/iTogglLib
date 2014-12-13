@@ -1,6 +1,6 @@
 //
 //  TGLTimeEntry.m
-//  iToggl
+//  iTogglLib
 //
 //  Created by Christoph Krautz on 05/05/14.
 //  Copyright 2014 Christoph Krautz

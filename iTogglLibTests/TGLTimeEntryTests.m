@@ -1,6 +1,6 @@
 //
 //  iTogglLibTests.m
-//  iTogglLibTests
+//  iTogglLib
 //
 //  Created by Christoph Krautz on 06/05/14.
 //  Copyright 2014 Christoph Krautz
