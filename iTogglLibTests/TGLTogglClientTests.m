@@ -20,6 +20,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <OCMock/OCMock.h>
 
 #import "TGLTogglClient.h"
 
@@ -43,6 +44,29 @@
     
     XCTAssertEqualObjects(@"TestAPIToken", client.username);
     XCTAssertEqualObjects(@"api_token", client.password);
+}
+
+- (void)testThatlistByGetWithRelativeURLReturnsNilWhenResponsePayloadIsNotArray {
+    TGLTogglClient *client = [[TGLTogglClient alloc] initWithApiToken:@"TestAPIToken"];
+    
+    id clientMock = [OCMockObject partialMockForObject:client];
+    OCMStub([clientMock sendRequest:[OCMArg any]]).andReturn([[NSObject alloc] init]);
+    
+    NSArray *list = [clientMock listByGetWithRelativeURL:@"Test"];
+    
+    XCTAssertNil(list);
+}
+
+- (void)testThatlistByGetWithRelativeURLReturnsArrayWhenResponsePayloadIsArray {
+    TGLTogglClient *client = [[TGLTogglClient alloc] initWithApiToken:@"TestAPIToken"];
+    
+    id clientMock = [OCMockObject partialMockForObject:client];
+    NSArray *expectedArray = [[NSArray alloc] init];
+    OCMStub([clientMock sendRequest:[OCMArg any]]).andReturn(expectedArray);
+    
+    NSArray *list = [clientMock listByGetWithRelativeURL:@"Test"];
+    
+    XCTAssertEqual(list, expectedArray);
 }
 
 @end
