@@ -37,6 +37,7 @@
 		265119C81A3C3870005B73D8 /* TGLUser+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 265119C71A3C3870005B73D8 /* TGLUser+Json.m */; };
 		265119CC1A3C3A10005B73D8 /* TGLUser+JsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265119CB1A3C3A10005B73D8 /* TGLUser+JsonTests.m */; };
 		265119CE1A3C3FE0005B73D8 /* TGLTogglClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265119CD1A3C3FE0005B73D8 /* TGLTogglClientTests.m */; };
+		265119DC1A456F7D005B73D8 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 265119D11A456F7D005B73D8 /* libOCMock.a */; };
 		269381CD19D36A020020D5C1 /* TGLWorkspaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */; };
 		269381D119D36AD10020D5C1 /* TGLWorkspace.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381D019D36AD10020D5C1 /* TGLWorkspace.m */; };
 		269381DB19D377C10020D5C1 /* TGLWorkspace+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */; };
@@ -115,6 +116,16 @@
 		265119C71A3C3870005B73D8 /* TGLUser+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLUser+Json.m"; sourceTree = "<group>"; };
 		265119CB1A3C3A10005B73D8 /* TGLUser+JsonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLUser+JsonTests.m"; sourceTree = "<group>"; };
 		265119CD1A3C3FE0005B73D8 /* TGLTogglClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTogglClientTests.m; sourceTree = "<group>"; };
+		265119D11A456F7D005B73D8 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		265119D31A456F7D005B73D8 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		265119D41A456F7D005B73D8 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		265119D51A456F7D005B73D8 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		265119D61A456F7D005B73D8 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		265119D71A456F7D005B73D8 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		265119D81A456F7D005B73D8 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		265119D91A456F7D005B73D8 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		265119DA1A456F7D005B73D8 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		265119DB1A456F7D005B73D8 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
 		269381CB19D36A020020D5C1 /* TGLWorkspaceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLWorkspaceService.h; sourceTree = "<group>"; };
 		269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLWorkspaceService.m; sourceTree = "<group>"; };
 		269381CF19D36AD10020D5C1 /* TGLWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLWorkspace.h; sourceTree = "<group>"; };
@@ -144,6 +155,7 @@
 				261542A71918C657006B33E2 /* libiTogglLib.a in Frameworks */,
 				261542A41918C657006B33E2 /* UIKit.framework in Frameworks */,
 				261542A21918C657006B33E2 /* Foundation.framework in Frameworks */,
+				265119DC1A456F7D005B73D8 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +165,7 @@
 		261542861918C656006B33E2 = {
 			isa = PBXGroup;
 			children = (
+				265119CF1A456F3F005B73D8 /* Externals */,
 				261542941918C656006B33E2 /* iTogglLib */,
 				261542A81918C657006B33E2 /* iTogglLibTests */,
 				261542911918C656006B33E2 /* Frameworks */,
@@ -244,6 +257,39 @@
 				269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		265119CF1A456F3F005B73D8 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				265119D01A456F7D005B73D8 /* OCMock */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		265119D01A456F7D005B73D8 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				265119D11A456F7D005B73D8 /* libOCMock.a */,
+				265119D21A456F7D005B73D8 /* OCMock */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		265119D21A456F7D005B73D8 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				265119D31A456F7D005B73D8 /* NSNotificationCenter+OCMAdditions.h */,
+				265119D41A456F7D005B73D8 /* OCMArg.h */,
+				265119D51A456F7D005B73D8 /* OCMConstraint.h */,
+				265119D61A456F7D005B73D8 /* OCMLocation.h */,
+				265119D71A456F7D005B73D8 /* OCMMacroState.h */,
+				265119D81A456F7D005B73D8 /* OCMock.h */,
+				265119D91A456F7D005B73D8 /* OCMockObject.h */,
+				265119DA1A456F7D005B73D8 /* OCMRecorder.h */,
+				265119DB1A456F7D005B73D8 /* OCMStubRecorder.h */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 		269381CE19D36AA80020D5C1 /* Models */ = {
@@ -513,7 +559,16 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Externals/OCMock",
+				);
 				INFOPLIST_FILE = "iTogglLibTests/iTogglLibTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/OCMock",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -535,7 +590,16 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Externals/OCMock",
+				);
 				INFOPLIST_FILE = "iTogglLibTests/iTogglLibTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Externals/OCMock",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
