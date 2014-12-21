@@ -1,583 +1,1663 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		260EC08319ACAC29001D3A87 /* TGLUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26A6870C19202A35000FD7E5 /* TGLUser.h */; };
-		260EC08419ACAC31001D3A87 /* TGLTimeEntry+Json.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */; };
-		260EC08519ACAC31001D3A87 /* TGLTimeEntry+NSCoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */; };
-		260EC08919ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 260EC08819ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m */; };
-		261542931918C656006B33E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542921918C656006B33E2 /* Foundation.framework */; };
-		261542981918C656006B33E2 /* iTogglLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542971918C656006B33E2 /* iTogglLib.h */; };
-		261542A11918C657006B33E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542A01918C657006B33E2 /* XCTest.framework */; };
-		261542A21918C657006B33E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542921918C656006B33E2 /* Foundation.framework */; };
-		261542A41918C657006B33E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261542A31918C657006B33E2 /* UIKit.framework */; };
-		261542A71918C657006B33E2 /* libiTogglLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2615428F1918C656006B33E2 /* libiTogglLib.a */; };
-		261542AD1918C657006B33E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 261542AB1918C657006B33E2 /* InfoPlist.strings */; };
-		261542AF1918C657006B33E2 /* TGLTimeEntryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 261542AE1918C657006B33E2 /* TGLTimeEntryTests.m */; };
-		261542C51918C6D5006B33E2 /* TGLTogglClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 261542C21918C6D5006B33E2 /* TGLTogglClient.m */; };
-		261542C61918C6D5006B33E2 /* TGLTimeEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 261542C41918C6D5006B33E2 /* TGLTimeEntry.m */; };
-		261542CA1918C84C006B33E2 /* TGLTogglClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542C11918C6D5006B33E2 /* TGLTogglClient.h */; };
-		261542CB1918C84C006B33E2 /* TGLTimeEntry.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261542C31918C6D5006B33E2 /* TGLTimeEntry.h */; };
-		262E5EF3195B6D7300030A45 /* TGLTimeEntry+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */; };
-		2641E82619C59301007BBB21 /* TGLTimeEntryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E82519C59301007BBB21 /* TGLTimeEntryService.m */; };
-		2641E82819C59BC2007BBB21 /* TGLTimeEntryService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E82419C59301007BBB21 /* TGLTimeEntryService.h */; };
-		2641E82B19C5AA5D007BBB21 /* TGLProjectService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E82A19C5AA5D007BBB21 /* TGLProjectService.m */; };
-		2641E82C19C5AA6C007BBB21 /* TGLProjectService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E82919C5AA5D007BBB21 /* TGLProjectService.h */; };
-		2641E83119C622FE007BBB21 /* TGLUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83019C622FE007BBB21 /* TGLUserService.m */; };
-		2641E83219C628B3007BBB21 /* TGLUserService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E82F19C622FE007BBB21 /* TGLUserService.h */; };
-		2641E83519C6C6AD007BBB21 /* TGLProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83419C6C6AD007BBB21 /* TGLProject.m */; };
-		2641E83B19C75608007BBB21 /* TGLProject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83A19C75608007BBB21 /* TGLProject+Json.m */; };
-		2641E83D19C759E0007BBB21 /* TGLProject+JsonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641E83C19C759E0007BBB21 /* TGLProject+JsonTest.m */; };
-		2643526A19F8DB8200812889 /* TGLWorkspace+JsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2643526919F8DB8200812889 /* TGLWorkspace+JsonTests.m */; };
-		265119C81A3C3870005B73D8 /* TGLUser+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 265119C71A3C3870005B73D8 /* TGLUser+Json.m */; };
-		265119CC1A3C3A10005B73D8 /* TGLUser+JsonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265119CB1A3C3A10005B73D8 /* TGLUser+JsonTests.m */; };
-		265119CE1A3C3FE0005B73D8 /* TGLTogglClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 265119CD1A3C3FE0005B73D8 /* TGLTogglClientTests.m */; };
-		269381CD19D36A020020D5C1 /* TGLWorkspaceService.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */; };
-		269381D119D36AD10020D5C1 /* TGLWorkspace.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381D019D36AD10020D5C1 /* TGLWorkspace.m */; };
-		269381DB19D377C10020D5C1 /* TGLWorkspace+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */; };
-		269381DC19D37F570020D5C1 /* TGLProject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2641E83319C6C6AD007BBB21 /* TGLProject.h */; };
-		269381DD19D37F570020D5C1 /* TGLWorkspace.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 269381CF19D36AD10020D5C1 /* TGLWorkspace.h */; };
-		269381DE19D37F570020D5C1 /* TGLWorkspaceService.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 269381CB19D36A020020D5C1 /* TGLWorkspaceService.h */; };
-		26A6870E19202A35000FD7E5 /* TGLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A6870D19202A35000FD7E5 /* TGLUser.m */; };
-		26AC554D19A792ED000899C5 /* TGLTimeEntry+NSCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		261542A51918C657006B33E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 261542871918C656006B33E2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2615428E1918C656006B33E2;
-			remoteInfo = iTogglLib;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2615428D1918C656006B33E2 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				269381DC19D37F570020D5C1 /* TGLProject.h in CopyFiles */,
-				269381DD19D37F570020D5C1 /* TGLWorkspace.h in CopyFiles */,
-				269381DE19D37F570020D5C1 /* TGLWorkspaceService.h in CopyFiles */,
-				2641E83219C628B3007BBB21 /* TGLUserService.h in CopyFiles */,
-				2641E82C19C5AA6C007BBB21 /* TGLProjectService.h in CopyFiles */,
-				2641E82819C59BC2007BBB21 /* TGLTimeEntryService.h in CopyFiles */,
-				260EC08419ACAC31001D3A87 /* TGLTimeEntry+Json.h in CopyFiles */,
-				260EC08519ACAC31001D3A87 /* TGLTimeEntry+NSCoder.h in CopyFiles */,
-				260EC08319ACAC29001D3A87 /* TGLUser.h in CopyFiles */,
-				261542CA1918C84C006B33E2 /* TGLTogglClient.h in CopyFiles */,
-				261542CB1918C84C006B33E2 /* TGLTimeEntry.h in CopyFiles */,
-				261542981918C656006B33E2 /* iTogglLib.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		260EC08819ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLTimeEntry+JsonTests.m"; sourceTree = "<group>"; };
-		2615428F1918C656006B33E2 /* libiTogglLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiTogglLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		261542921918C656006B33E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		261542961918C656006B33E2 /* iTogglLib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTogglLib-Prefix.pch"; sourceTree = "<group>"; };
-		261542971918C656006B33E2 /* iTogglLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTogglLib.h; sourceTree = "<group>"; };
-		2615429F1918C657006B33E2 /* iTogglLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTogglLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		261542A01918C657006B33E2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		261542A31918C657006B33E2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		261542AA1918C657006B33E2 /* iTogglLibTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iTogglLibTests-Info.plist"; sourceTree = "<group>"; };
-		261542AC1918C657006B33E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		261542AE1918C657006B33E2 /* TGLTimeEntryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGLTimeEntryTests.m; sourceTree = "<group>"; };
-		261542C11918C6D5006B33E2 /* TGLTogglClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLTogglClient.h; sourceTree = "<group>"; };
-		261542C21918C6D5006B33E2 /* TGLTogglClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTogglClient.m; sourceTree = "<group>"; };
-		261542C31918C6D5006B33E2 /* TGLTimeEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLTimeEntry.h; sourceTree = "<group>"; };
-		261542C41918C6D5006B33E2 /* TGLTimeEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTimeEntry.m; sourceTree = "<group>"; };
-		262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLTimeEntry+Json.h"; sourceTree = "<group>"; };
-		262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLTimeEntry+Json.m"; sourceTree = "<group>"; };
-		2641E82419C59301007BBB21 /* TGLTimeEntryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLTimeEntryService.h; sourceTree = "<group>"; };
-		2641E82519C59301007BBB21 /* TGLTimeEntryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTimeEntryService.m; sourceTree = "<group>"; };
-		2641E82919C5AA5D007BBB21 /* TGLProjectService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLProjectService.h; sourceTree = "<group>"; };
-		2641E82A19C5AA5D007BBB21 /* TGLProjectService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLProjectService.m; sourceTree = "<group>"; };
-		2641E82F19C622FE007BBB21 /* TGLUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLUserService.h; sourceTree = "<group>"; };
-		2641E83019C622FE007BBB21 /* TGLUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUserService.m; sourceTree = "<group>"; };
-		2641E83319C6C6AD007BBB21 /* TGLProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLProject.h; sourceTree = "<group>"; };
-		2641E83419C6C6AD007BBB21 /* TGLProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLProject.m; sourceTree = "<group>"; };
-		2641E83919C75608007BBB21 /* TGLProject+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLProject+Json.h"; sourceTree = "<group>"; };
-		2641E83A19C75608007BBB21 /* TGLProject+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLProject+Json.m"; sourceTree = "<group>"; };
-		2641E83C19C759E0007BBB21 /* TGLProject+JsonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLProject+JsonTest.m"; sourceTree = "<group>"; };
-		2643526919F8DB8200812889 /* TGLWorkspace+JsonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLWorkspace+JsonTests.m"; sourceTree = "<group>"; };
-		265119C61A3C3870005B73D8 /* TGLUser+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLUser+Json.h"; sourceTree = "<group>"; };
-		265119C71A3C3870005B73D8 /* TGLUser+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLUser+Json.m"; sourceTree = "<group>"; };
-		265119CB1A3C3A10005B73D8 /* TGLUser+JsonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLUser+JsonTests.m"; sourceTree = "<group>"; };
-		265119CD1A3C3FE0005B73D8 /* TGLTogglClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLTogglClientTests.m; sourceTree = "<group>"; };
-		269381CB19D36A020020D5C1 /* TGLWorkspaceService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLWorkspaceService.h; sourceTree = "<group>"; };
-		269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLWorkspaceService.m; sourceTree = "<group>"; };
-		269381CF19D36AD10020D5C1 /* TGLWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLWorkspace.h; sourceTree = "<group>"; };
-		269381D019D36AD10020D5C1 /* TGLWorkspace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLWorkspace.m; sourceTree = "<group>"; };
-		269381D919D377C10020D5C1 /* TGLWorkspace+Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLWorkspace+Json.h"; sourceTree = "<group>"; };
-		269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLWorkspace+Json.m"; sourceTree = "<group>"; };
-		26A6870C19202A35000FD7E5 /* TGLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGLUser.h; sourceTree = "<group>"; };
-		26A6870D19202A35000FD7E5 /* TGLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGLUser.m; sourceTree = "<group>"; };
-		26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TGLTimeEntry+NSCoder.h"; sourceTree = "<group>"; };
-		26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TGLTimeEntry+NSCoder.m"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2615428C1918C656006B33E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				261542931918C656006B33E2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2615429C1918C657006B33E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				261542A11918C657006B33E2 /* XCTest.framework in Frameworks */,
-				261542A71918C657006B33E2 /* libiTogglLib.a in Frameworks */,
-				261542A41918C657006B33E2 /* UIKit.framework in Frameworks */,
-				261542A21918C657006B33E2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		261542861918C656006B33E2 = {
-			isa = PBXGroup;
-			children = (
-				261542941918C656006B33E2 /* iTogglLib */,
-				261542A81918C657006B33E2 /* iTogglLibTests */,
-				261542911918C656006B33E2 /* Frameworks */,
-				261542901918C656006B33E2 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		261542901918C656006B33E2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2615428F1918C656006B33E2 /* libiTogglLib.a */,
-				2615429F1918C657006B33E2 /* iTogglLibTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		261542911918C656006B33E2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				261542921918C656006B33E2 /* Foundation.framework */,
-				261542A01918C657006B33E2 /* XCTest.framework */,
-				261542A31918C657006B33E2 /* UIKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		261542941918C656006B33E2 /* iTogglLib */ = {
-			isa = PBXGroup;
-			children = (
-				2641E82D19C621C5007BBB21 /* Classes */,
-				261542951918C656006B33E2 /* Supporting Files */,
-			);
-			path = iTogglLib;
-			sourceTree = "<group>";
-		};
-		261542951918C656006B33E2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				261542961918C656006B33E2 /* iTogglLib-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		261542A81918C657006B33E2 /* iTogglLibTests */ = {
-			isa = PBXGroup;
-			children = (
-				261542AE1918C657006B33E2 /* TGLTimeEntryTests.m */,
-				260EC08819ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m */,
-				2641E83C19C759E0007BBB21 /* TGLProject+JsonTest.m */,
-				2643526919F8DB8200812889 /* TGLWorkspace+JsonTests.m */,
-				265119CB1A3C3A10005B73D8 /* TGLUser+JsonTests.m */,
-				265119CD1A3C3FE0005B73D8 /* TGLTogglClientTests.m */,
-				261542A91918C657006B33E2 /* Supporting Files */,
-			);
-			path = iTogglLibTests;
-			sourceTree = "<group>";
-		};
-		261542A91918C657006B33E2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				261542AA1918C657006B33E2 /* iTogglLibTests-Info.plist */,
-				261542AB1918C657006B33E2 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2641E82D19C621C5007BBB21 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				269381CE19D36AA80020D5C1 /* Models */,
-				2641E82E19C622DE007BBB21 /* Services */,
-				261542C11918C6D5006B33E2 /* TGLTogglClient.h */,
-				261542C21918C6D5006B33E2 /* TGLTogglClient.m */,
-				261542971918C656006B33E2 /* iTogglLib.h */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		2641E82E19C622DE007BBB21 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				2641E82419C59301007BBB21 /* TGLTimeEntryService.h */,
-				2641E82519C59301007BBB21 /* TGLTimeEntryService.m */,
-				2641E82919C5AA5D007BBB21 /* TGLProjectService.h */,
-				2641E82A19C5AA5D007BBB21 /* TGLProjectService.m */,
-				2641E82F19C622FE007BBB21 /* TGLUserService.h */,
-				2641E83019C622FE007BBB21 /* TGLUserService.m */,
-				269381CB19D36A020020D5C1 /* TGLWorkspaceService.h */,
-				269381CC19D36A020020D5C1 /* TGLWorkspaceService.m */,
-			);
-			name = Services;
-			sourceTree = "<group>";
-		};
-		269381CE19D36AA80020D5C1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				261542C31918C6D5006B33E2 /* TGLTimeEntry.h */,
-				261542C41918C6D5006B33E2 /* TGLTimeEntry.m */,
-				262E5EF1195B6D7300030A45 /* TGLTimeEntry+Json.h */,
-				262E5EF2195B6D7300030A45 /* TGLTimeEntry+Json.m */,
-				26AC554B19A792ED000899C5 /* TGLTimeEntry+NSCoder.h */,
-				26AC554C19A792ED000899C5 /* TGLTimeEntry+NSCoder.m */,
-				26A6870C19202A35000FD7E5 /* TGLUser.h */,
-				26A6870D19202A35000FD7E5 /* TGLUser.m */,
-				2641E83319C6C6AD007BBB21 /* TGLProject.h */,
-				2641E83419C6C6AD007BBB21 /* TGLProject.m */,
-				2641E83919C75608007BBB21 /* TGLProject+Json.h */,
-				2641E83A19C75608007BBB21 /* TGLProject+Json.m */,
-				269381CF19D36AD10020D5C1 /* TGLWorkspace.h */,
-				269381D019D36AD10020D5C1 /* TGLWorkspace.m */,
-				269381D919D377C10020D5C1 /* TGLWorkspace+Json.h */,
-				269381DA19D377C10020D5C1 /* TGLWorkspace+Json.m */,
-				265119C61A3C3870005B73D8 /* TGLUser+Json.h */,
-				265119C71A3C3870005B73D8 /* TGLUser+Json.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		2615428E1918C656006B33E2 /* iTogglLib */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 261542B21918C657006B33E2 /* Build configuration list for PBXNativeTarget "iTogglLib" */;
-			buildPhases = (
-				2615428B1918C656006B33E2 /* Sources */,
-				2615428C1918C656006B33E2 /* Frameworks */,
-				2615428D1918C656006B33E2 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iTogglLib;
-			productName = iTogglLib;
-			productReference = 2615428F1918C656006B33E2 /* libiTogglLib.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		2615429E1918C657006B33E2 /* iTogglLibTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 261542B51918C657006B33E2 /* Build configuration list for PBXNativeTarget "iTogglLibTests" */;
-			buildPhases = (
-				2615429B1918C657006B33E2 /* Sources */,
-				2615429C1918C657006B33E2 /* Frameworks */,
-				2615429D1918C657006B33E2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				261542A61918C657006B33E2 /* PBXTargetDependency */,
-			);
-			name = iTogglLibTests;
-			productName = iTogglLibTests;
-			productReference = 2615429F1918C657006B33E2 /* iTogglLibTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		261542871918C656006B33E2 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = TGL;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Christoph Krautz";
-			};
-			buildConfigurationList = 2615428A1918C656006B33E2 /* Build configuration list for PBXProject "iTogglLib" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 261542861918C656006B33E2;
-			productRefGroup = 261542901918C656006B33E2 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				2615428E1918C656006B33E2 /* iTogglLib */,
-				2615429E1918C657006B33E2 /* iTogglLibTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		2615429D1918C657006B33E2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				261542AD1918C657006B33E2 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2615428B1918C656006B33E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				261542C61918C6D5006B33E2 /* TGLTimeEntry.m in Sources */,
-				2641E83B19C75608007BBB21 /* TGLProject+Json.m in Sources */,
-				261542C51918C6D5006B33E2 /* TGLTogglClient.m in Sources */,
-				2641E83119C622FE007BBB21 /* TGLUserService.m in Sources */,
-				26A6870E19202A35000FD7E5 /* TGLUser.m in Sources */,
-				2641E82619C59301007BBB21 /* TGLTimeEntryService.m in Sources */,
-				2641E82B19C5AA5D007BBB21 /* TGLProjectService.m in Sources */,
-				26AC554D19A792ED000899C5 /* TGLTimeEntry+NSCoder.m in Sources */,
-				269381CD19D36A020020D5C1 /* TGLWorkspaceService.m in Sources */,
-				262E5EF3195B6D7300030A45 /* TGLTimeEntry+Json.m in Sources */,
-				2641E83519C6C6AD007BBB21 /* TGLProject.m in Sources */,
-				269381D119D36AD10020D5C1 /* TGLWorkspace.m in Sources */,
-				265119C81A3C3870005B73D8 /* TGLUser+Json.m in Sources */,
-				269381DB19D377C10020D5C1 /* TGLWorkspace+Json.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2615429B1918C657006B33E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				265119CE1A3C3FE0005B73D8 /* TGLTogglClientTests.m in Sources */,
-				260EC08919ADCEB3001D3A87 /* TGLTimeEntry+JsonTests.m in Sources */,
-				265119CC1A3C3A10005B73D8 /* TGLUser+JsonTests.m in Sources */,
-				2643526A19F8DB8200812889 /* TGLWorkspace+JsonTests.m in Sources */,
-				261542AF1918C657006B33E2 /* TGLTimeEntryTests.m in Sources */,
-				2641E83D19C759E0007BBB21 /* TGLProject+JsonTest.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		261542A61918C657006B33E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2615428E1918C656006B33E2 /* iTogglLib */;
-			targetProxy = 261542A51918C657006B33E2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		261542AB1918C657006B33E2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				261542AC1918C657006B33E2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		261542B01918C657006B33E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		261542B11918C657006B33E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		261542B31918C657006B33E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/iTogglLib.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		261542B41918C657006B33E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/iTogglLib.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		261542B61918C657006B33E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "iTogglLibTests/iTogglLibTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					XCTest,
-					"-ObjC",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		261542B71918C657006B33E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iTogglLib/iTogglLib-Prefix.pch";
-				INFOPLIST_FILE = "iTogglLibTests/iTogglLibTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					XCTest,
-					"-ObjC",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2615428A1918C656006B33E2 /* Build configuration list for PBXProject "iTogglLib" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				261542B01918C657006B33E2 /* Debug */,
-				261542B11918C657006B33E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		261542B21918C657006B33E2 /* Build configuration list for PBXNativeTarget "iTogglLib" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				261542B31918C657006B33E2 /* Debug */,
-				261542B41918C657006B33E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		261542B51918C657006B33E2 /* Build configuration list for PBXNativeTarget "iTogglLibTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				261542B61918C657006B33E2 /* Debug */,
-				261542B71918C657006B33E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 261542871918C656006B33E2 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>05B06BCBF37B0A80CA65C9D3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>1876E381A18A8C9D35FF2103</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AE14ECA5575CE81064606C5C</string>
+				<string>B85E1B7D20C51FCDE836E36F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>260EC08319ACAC29001D3A87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>26A6870C19202A35000FD7E5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>260EC08419ACAC31001D3A87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>262E5EF1195B6D7300030A45</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>260EC08519ACAC31001D3A87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>26AC554B19A792ED000899C5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>260EC08819ADCEB3001D3A87</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLTimeEntry+JsonTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>260EC08919ADCEB3001D3A87</key>
+		<dict>
+			<key>fileRef</key>
+			<string>260EC08819ADCEB3001D3A87</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542861918C656006B33E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>261542941918C656006B33E2</string>
+				<string>261542A81918C657006B33E2</string>
+				<string>261542911918C656006B33E2</string>
+				<string>261542901918C656006B33E2</string>
+				<string>1876E381A18A8C9D35FF2103</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542871918C656006B33E2</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>TGL</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Christoph Krautz</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2615428A1918C656006B33E2</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>261542861918C656006B33E2</string>
+			<key>productRefGroup</key>
+			<string>261542901918C656006B33E2</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>2615428E1918C656006B33E2</string>
+				<string>2615429E1918C657006B33E2</string>
+			</array>
+		</dict>
+		<key>2615428A1918C656006B33E2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>261542B01918C657006B33E2</string>
+				<string>261542B11918C657006B33E2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2615428B1918C656006B33E2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>261542C61918C6D5006B33E2</string>
+				<string>2641E83B19C75608007BBB21</string>
+				<string>261542C51918C6D5006B33E2</string>
+				<string>2641E83119C622FE007BBB21</string>
+				<string>26A6870E19202A35000FD7E5</string>
+				<string>2641E82619C59301007BBB21</string>
+				<string>2641E82B19C5AA5D007BBB21</string>
+				<string>26AC554D19A792ED000899C5</string>
+				<string>269381CD19D36A020020D5C1</string>
+				<string>262E5EF3195B6D7300030A45</string>
+				<string>2641E83519C6C6AD007BBB21</string>
+				<string>269381D119D36AD10020D5C1</string>
+				<string>265119C81A3C3870005B73D8</string>
+				<string>269381DB19D377C10020D5C1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2615428C1918C656006B33E2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>261542931918C656006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2615428D1918C656006B33E2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string>include/$(PRODUCT_NAME)</string>
+			<key>dstSubfolderSpec</key>
+			<string>16</string>
+			<key>files</key>
+			<array>
+				<string>269381DC19D37F570020D5C1</string>
+				<string>269381DD19D37F570020D5C1</string>
+				<string>269381DE19D37F570020D5C1</string>
+				<string>2641E83219C628B3007BBB21</string>
+				<string>2641E82C19C5AA6C007BBB21</string>
+				<string>2641E82819C59BC2007BBB21</string>
+				<string>260EC08419ACAC31001D3A87</string>
+				<string>260EC08519ACAC31001D3A87</string>
+				<string>260EC08319ACAC29001D3A87</string>
+				<string>261542CA1918C84C006B33E2</string>
+				<string>261542CB1918C84C006B33E2</string>
+				<string>261542981918C656006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2615428E1918C656006B33E2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>261542B21918C657006B33E2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2615428B1918C656006B33E2</string>
+				<string>2615428C1918C656006B33E2</string>
+				<string>2615428D1918C656006B33E2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>iTogglLib</string>
+			<key>productName</key>
+			<string>iTogglLib</string>
+			<key>productReference</key>
+			<string>2615428F1918C656006B33E2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>2615428F1918C656006B33E2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libiTogglLib.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>261542901918C656006B33E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2615428F1918C656006B33E2</string>
+				<string>2615429F1918C657006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542911918C656006B33E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>261542921918C656006B33E2</string>
+				<string>261542A01918C657006B33E2</string>
+				<string>261542A31918C657006B33E2</string>
+				<string>EA852B36F78B5A9005F51EC5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542921918C656006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>261542931918C656006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542921918C656006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542941918C656006B33E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2641E82D19C621C5007BBB21</string>
+				<string>261542951918C656006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>iTogglLib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542951918C656006B33E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>261542961918C656006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542961918C656006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>iTogglLib-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542971918C656006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>iTogglLib.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542981918C656006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542971918C656006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2615429B1918C657006B33E2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>265119CE1A3C3FE0005B73D8</string>
+				<string>260EC08919ADCEB3001D3A87</string>
+				<string>265119CC1A3C3A10005B73D8</string>
+				<string>2643526A19F8DB8200812889</string>
+				<string>261542AF1918C657006B33E2</string>
+				<string>2641E83D19C759E0007BBB21</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2615429C1918C657006B33E2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>261542A11918C657006B33E2</string>
+				<string>261542A71918C657006B33E2</string>
+				<string>261542A41918C657006B33E2</string>
+				<string>261542A21918C657006B33E2</string>
+				<string>5604317961E85F76E6CB96A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2615429D1918C657006B33E2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>261542AD1918C657006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>2615429E1918C657006B33E2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>261542B51918C657006B33E2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>05B06BCBF37B0A80CA65C9D3</string>
+				<string>2615429B1918C657006B33E2</string>
+				<string>2615429C1918C657006B33E2</string>
+				<string>2615429D1918C657006B33E2</string>
+				<string>6A654C4A4EBD9BFB13D1CED3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>261542A61918C657006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>iTogglLibTests</string>
+			<key>productName</key>
+			<string>iTogglLibTests</string>
+			<key>productReference</key>
+			<string>2615429F1918C657006B33E2</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>2615429F1918C657006B33E2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>iTogglLibTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>261542A01918C657006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>261542A11918C657006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542A01918C657006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542A21918C657006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542921918C656006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542A31918C657006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>261542A41918C657006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542A31918C657006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542A51918C657006B33E2</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>261542871918C656006B33E2</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>2615428E1918C656006B33E2</string>
+			<key>remoteInfo</key>
+			<string>iTogglLib</string>
+		</dict>
+		<key>261542A61918C657006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>2615428E1918C656006B33E2</string>
+			<key>targetProxy</key>
+			<string>261542A51918C657006B33E2</string>
+		</dict>
+		<key>261542A71918C657006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2615428F1918C656006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542A81918C657006B33E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>261542AE1918C657006B33E2</string>
+				<string>260EC08819ADCEB3001D3A87</string>
+				<string>2641E83C19C759E0007BBB21</string>
+				<string>2643526919F8DB8200812889</string>
+				<string>265119CB1A3C3A10005B73D8</string>
+				<string>265119CD1A3C3FE0005B73D8</string>
+				<string>261542A91918C657006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>iTogglLibTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542A91918C657006B33E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>261542AA1918C657006B33E2</string>
+				<string>261542AB1918C657006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542AA1918C657006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>iTogglLibTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542AB1918C657006B33E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>261542AC1918C657006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542AC1918C657006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542AD1918C657006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542AB1918C657006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542AE1918C657006B33E2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLTimeEntryTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542AF1918C657006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542AE1918C657006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542B01918C657006B33E2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>261542B11918C657006B33E2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>261542B21918C657006B33E2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>261542B31918C657006B33E2</string>
+				<string>261542B41918C657006B33E2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>261542B31918C657006B33E2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/iTogglLib.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>iTogglLib/iTogglLib-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>261542B41918C657006B33E2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/iTogglLib.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>iTogglLib/iTogglLib-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>261542B51918C657006B33E2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>261542B61918C657006B33E2</string>
+				<string>261542B71918C657006B33E2</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>261542B61918C657006B33E2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AE14ECA5575CE81064606C5C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>iTogglLib/iTogglLib-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>iTogglLibTests/iTogglLibTests-Info.plist</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-framework</string>
+					<string>XCTest</string>
+					<string>-ObjC</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>261542B71918C657006B33E2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B85E1B7D20C51FCDE836E36F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>iTogglLib/iTogglLib-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>iTogglLibTests/iTogglLibTests-Info.plist</string>
+				<key>OTHER_LDFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-framework</string>
+					<string>XCTest</string>
+					<string>-ObjC</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>261542C11918C6D5006B33E2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLTogglClient.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542C21918C6D5006B33E2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLTogglClient.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542C31918C6D5006B33E2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLTimeEntry.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542C41918C6D5006B33E2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLTimeEntry.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>261542C51918C6D5006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542C21918C6D5006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542C61918C6D5006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542C41918C6D5006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542CA1918C84C006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542C11918C6D5006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>261542CB1918C84C006B33E2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>261542C31918C6D5006B33E2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>262E5EF1195B6D7300030A45</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLTimeEntry+Json.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>262E5EF2195B6D7300030A45</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLTimeEntry+Json.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>262E5EF3195B6D7300030A45</key>
+		<dict>
+			<key>fileRef</key>
+			<string>262E5EF2195B6D7300030A45</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E82419C59301007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLTimeEntryService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E82519C59301007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLTimeEntryService.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E82619C59301007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E82519C59301007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E82819C59BC2007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E82419C59301007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E82919C5AA5D007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLProjectService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E82A19C5AA5D007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLProjectService.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E82B19C5AA5D007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E82A19C5AA5D007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E82C19C5AA6C007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E82919C5AA5D007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E82D19C621C5007BBB21</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>269381CE19D36AA80020D5C1</string>
+				<string>2641E82E19C622DE007BBB21</string>
+				<string>261542C11918C6D5006B33E2</string>
+				<string>261542C21918C6D5006B33E2</string>
+				<string>261542971918C656006B33E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E82E19C622DE007BBB21</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2641E82419C59301007BBB21</string>
+				<string>2641E82519C59301007BBB21</string>
+				<string>2641E82919C5AA5D007BBB21</string>
+				<string>2641E82A19C5AA5D007BBB21</string>
+				<string>2641E82F19C622FE007BBB21</string>
+				<string>2641E83019C622FE007BBB21</string>
+				<string>269381CB19D36A020020D5C1</string>
+				<string>269381CC19D36A020020D5C1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Services</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E82F19C622FE007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLUserService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E83019C622FE007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLUserService.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E83119C622FE007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E83019C622FE007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E83219C628B3007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E82F19C622FE007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E83319C6C6AD007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLProject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E83419C6C6AD007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLProject.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E83519C6C6AD007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E83419C6C6AD007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E83919C75608007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLProject+Json.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E83A19C75608007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLProject+Json.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E83B19C75608007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E83A19C75608007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2641E83C19C759E0007BBB21</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLProject+JsonTest.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2641E83D19C759E0007BBB21</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E83C19C759E0007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2643526919F8DB8200812889</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLWorkspace+JsonTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2643526A19F8DB8200812889</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2643526919F8DB8200812889</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>265119C61A3C3870005B73D8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLUser+Json.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>265119C71A3C3870005B73D8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLUser+Json.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>265119C81A3C3870005B73D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>265119C71A3C3870005B73D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>265119CB1A3C3A10005B73D8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLUser+JsonTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>265119CC1A3C3A10005B73D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>265119CB1A3C3A10005B73D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>265119CD1A3C3FE0005B73D8</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLTogglClientTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>265119CE1A3C3FE0005B73D8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>265119CD1A3C3FE0005B73D8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>269381CB19D36A020020D5C1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLWorkspaceService.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>269381CC19D36A020020D5C1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLWorkspaceService.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>269381CD19D36A020020D5C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>269381CC19D36A020020D5C1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>269381CE19D36AA80020D5C1</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>261542C31918C6D5006B33E2</string>
+				<string>261542C41918C6D5006B33E2</string>
+				<string>262E5EF1195B6D7300030A45</string>
+				<string>262E5EF2195B6D7300030A45</string>
+				<string>26AC554B19A792ED000899C5</string>
+				<string>26AC554C19A792ED000899C5</string>
+				<string>26A6870C19202A35000FD7E5</string>
+				<string>26A6870D19202A35000FD7E5</string>
+				<string>2641E83319C6C6AD007BBB21</string>
+				<string>2641E83419C6C6AD007BBB21</string>
+				<string>2641E83919C75608007BBB21</string>
+				<string>2641E83A19C75608007BBB21</string>
+				<string>269381CF19D36AD10020D5C1</string>
+				<string>269381D019D36AD10020D5C1</string>
+				<string>269381D919D377C10020D5C1</string>
+				<string>269381DA19D377C10020D5C1</string>
+				<string>265119C61A3C3870005B73D8</string>
+				<string>265119C71A3C3870005B73D8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>269381CF19D36AD10020D5C1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLWorkspace.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>269381D019D36AD10020D5C1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLWorkspace.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>269381D119D36AD10020D5C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>269381D019D36AD10020D5C1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>269381D919D377C10020D5C1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLWorkspace+Json.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>269381DA19D377C10020D5C1</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLWorkspace+Json.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>269381DB19D377C10020D5C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>269381DA19D377C10020D5C1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>269381DC19D37F570020D5C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2641E83319C6C6AD007BBB21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>269381DD19D37F570020D5C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>269381CF19D36AD10020D5C1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>269381DE19D37F570020D5C1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>269381CB19D36A020020D5C1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>26A6870C19202A35000FD7E5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLUser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>26A6870D19202A35000FD7E5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLUser.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>26A6870E19202A35000FD7E5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>26A6870D19202A35000FD7E5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>26AC554B19A792ED000899C5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TGLTimeEntry+NSCoder.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>26AC554C19A792ED000899C5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TGLTimeEntry+NSCoder.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>26AC554D19A792ED000899C5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>26AC554C19A792ED000899C5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5604317961E85F76E6CB96A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EA852B36F78B5A9005F51EC5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6A654C4A4EBD9BFB13D1CED3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-iTogglLibTests/Pods-iTogglLibTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>AE14ECA5575CE81064606C5C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-iTogglLibTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-iTogglLibTests/Pods-iTogglLibTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B85E1B7D20C51FCDE836E36F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-iTogglLibTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-iTogglLibTests/Pods-iTogglLibTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA852B36F78B5A9005F51EC5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-iTogglLibTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>261542871918C656006B33E2</string>
+</dict>
+</plist>

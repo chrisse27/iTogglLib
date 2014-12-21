@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F599DD67-9483-4725-BD97-A167692DA1E9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iTogglLib</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>154C0EFF532B82A719F67A838A02E1B4DF0F3092</key>
+		<string>github.com:chrisse27/iTogglLib.git</string>
+		<key>643F509F61E23201C8D3D9953ABCFA1CAB395868</key>
+		<string>https://bitbucket.org/ck3m/itoggl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iTogglLib.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>154C0EFF532B82A719F67A838A02E1B4DF0F3092</key>
+		<string>..</string>
+		<key>643F509F61E23201C8D3D9953ABCFA1CAB395868</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:chrisse27/iTogglLib.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>154C0EFF532B82A719F67A838A02E1B4DF0F3092</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>643F509F61E23201C8D3D9953ABCFA1CAB395868</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>154C0EFF532B82A719F67A838A02E1B4DF0F3092</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iTogglLib</string>
+		</dict>
+	</array>
+</dict>
+</plist>
