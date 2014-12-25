@@ -29,6 +29,16 @@
 
 @implementation TGLWorkspace_JsonTests
 
+- (void)setUp
+{
+    [super setUp];
+}
+
+- (void)tearDown
+{
+    [super tearDown];
+}
+
 - (void)testThatWorkspaceFromDictionaryCopiesAllKnownValues {
     NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
                                 @123, @"id",

@@ -28,6 +28,16 @@
 
 @implementation TGLTimeEntryTests
 
+- (void)setUp
+{
+    [super setUp];
+}
+
+- (void)tearDown
+{
+    [super tearDown];
+}
+
 - (void)testThatIsEqualToTimeEntryReturnsTrueWhenDescriptionsAndPidsAreEqual
 {
     TGLTimeEntry *entry1 = [[TGLTimeEntry alloc] init];

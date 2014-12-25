@@ -30,6 +30,16 @@
 
 @implementation TGLUser_JsonTests
 
+- (void)setUp
+{
+    [super setUp];
+}
+
+- (void)tearDown
+{
+    [super tearDown];
+}
+
 - (void)testThatUserFromDictionaryCopiesAllKnownValues {
     NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
                                 @"TestApiToken", @"api_token",

@@ -29,6 +29,16 @@
 
 @implementation TGLTimeEntry_JsonTests
 
+- (void)setUp
+{
+    [super setUp];
+}
+
+- (void)tearDown
+{
+    [super tearDown];
+}
+
 - (void)testThatTimeEntryFromDictionaryCopiesAllKnownValues
 {
     NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:

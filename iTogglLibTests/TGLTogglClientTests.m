@@ -30,6 +30,16 @@
 
 @implementation TGLTogglClientTests
 
+- (void)setUp
+{
+    [super setUp];
+}
+
+- (void)tearDown
+{
+    [super tearDown];
+}
+
 - (void)testThatInitWithUsernameAndPasswordsSetsValues {
     
     TGLTogglClient *client = [[TGLTogglClient alloc] initWithUserName:@"Username" AndPassword:@"Password"];

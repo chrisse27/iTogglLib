@@ -29,6 +29,16 @@
 
 @implementation TGLProject_JsonTest
 
+- (void)setUp
+{
+    [super setUp];
+}
+
+- (void)tearDown
+{
+    [super tearDown];
+}
+
 - (void)testThatProjectFromDictionaryReturnsCorrectPRoject
 {
     NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:
